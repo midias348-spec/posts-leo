@@ -1,10 +1,56 @@
 {
   "conta": "@leo.sena97",
   "itens": [
-    {"id": 1, "arquivo": "claude-trabalha-enquanto-voce-dorme.mp4", "titulo": "O Claude trabalha enquanto você dorme", "cta": "AGENDA", "legenda": null, "capa": null, "data": null, "status": "preparado"},
-    {"id": 2, "arquivo": "carrossel-que-nao-acaba.mp4", "titulo": "O carrossel que não acaba", "cta": "CANVA", "legenda": null, "capa": null, "data": null, "status": "preparado"},
-    {"id": 3, "arquivo": "cidade-de-papel.mp4", "titulo": "Cidade de papel (Higgsfield)", "cta": null, "legenda": null, "capa": null, "data": null, "status": "preparado"},
-    {"id": 4, "arquivo": "prompts-video-real.mp4", "titulo": "Prompts pra vídeo parecer real (Higgsfield, falas em inglês)", "cta": null, "legenda": null, "capa": null, "data": null, "status": "preparado"},
-    {"id": 5, "arquivo": "gta-vertical.mp4", "titulo": "Vídeo GTA (convertido pra vertical)", "cta": null, "legenda": null, "capa": null, "data": null, "status": "preparado"}
+    {
+      "id": 1,
+      "arquivo": "claude-trabalha-enquanto-voce-dorme.mp4",
+      "titulo": "O Claude trabalha enquanto você dorme",
+      "cta": "AGENDA",
+      "legenda": null,
+      "capa": null,
+      "data": null,
+      "status": "preparado"
+    },
+    {
+      "id": 2,
+      "arquivo": "carrossel-que-nao-acaba.mp4",
+      "titulo": "O carrossel que não acaba",
+      "cta": "CANVA",
+      "legenda": null,
+      "capa": null,
+      "data": null,
+      "status": "preparado"
+    },
+    {
+      "id": 3,
+      "arquivo": "cidade-de-papel.mp4",
+      "titulo": "Cidade de papel (Higgsfield)",
+      "cta": null,
+      "legenda": null,
+      "capa": null,
+      "data": null,
+      "status": "preparado"
+    },
+    {
+      "id": 4,
+      "arquivo": "prompts-video-real.mp4",
+      "titulo": "Prompts pra vídeo parecer real (Higgsfield, falas em inglês)",
+      "cta": null,
+      "legenda": null,
+      "capa": null,
+      "data": null,
+      "status": "preparado"
+    },
+    {
+      "id": 5,
+      "arquivo": "gta-vertical.mp4",
+      "titulo": "Vídeo GTA (convertido pra vertical)",
+      "cta": null,
+      "legenda": null,
+      "capa": "capa-gta.jpg",
+      "data": "2026-11-19T19:00-03:00",
+      "status": "postado",
+      "media_id": "17879064528636443"
+    }
   ]
 }
