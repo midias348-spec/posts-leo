@@ -1,0 +1,931 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Papai Noel em Casa · O Papai Noel na sua sala, falando o nome do seu filho</title>
+<meta name="description" content="Mande a foto de um cantinho da casa e o nome da criança. O Papai Noel aparece ali e chama seu filho pelo nome. Pronto em até 24h no WhatsApp. A partir de R$ 37,90.">
+<meta property="og:title" content="Papai Noel em Casa">
+<meta property="og:description" content="O Papai Noel na sua sala, chamando seu filho pelo nome. Pronto em até 24h.">
+<meta property="og:image" content="img/og.jpg"><meta property="og:type" content="website"><meta name="theme-color" content="#0A2B22">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@font-face{font-family:'Cormorant Garamond';font-weight:500;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Cormorant Garamond';font-weight:500;font-style:italic;src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Cormorant Garamond';font-weight:600;font-style:italic;src:url(fonts/cormorant-garamond-latin-600-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Cormorant Garamond';font-weight:700;font-style:italic;src:url(fonts/cormorant-garamond-latin-700-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'EB Garamond';font-weight:400;src:url(fonts/eb-garamond-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'EB Garamond';font-weight:400;font-style:italic;src:url(fonts/eb-garamond-latin-400-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'EB Garamond';font-weight:500;src:url(fonts/eb-garamond-latin-500-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Cinzel';font-weight:500;src:url(fonts/cinzel-latin-500-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Cinzel';font-weight:600;src:url(fonts/cinzel-latin-600-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Pinyon Script';src:url(fonts/pinyon-script-latin-400-normal.woff2) format('woff2');font-display:swap}
+
+/* Esmeralda, ouro e vinho: Natal vitoriano à luz de lareira */
+:root{
+  --em-0:#051C16;--em-1:#0A2B22;--em-2:#0F3A2D;--em-3:#16503D;
+  --gold:#D9B26A;--gold-hi:#F7E3A3;--gold-lo:#9C6A22;
+  --wine:#6E1424;--wine-hi:#8E2232;
+  --ivory:#F6EEDC;--cream:#E9E1CC;--mist:#C3CEC4;--muted:#95A99C;
+  --display:'Cormorant Garamond',Georgia,serif;--text:'EB Garamond',Georgia,serif;
+  --caps:'Cinzel',Georgia,serif;--script:'Pinyon Script','Snell Roundhand',cursive;
+  --ease:cubic-bezier(.22,1,.36,1);
+  color-scheme:dark
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--em-1);color:var(--ivory);font-family:var(--text);font-size:20px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:4px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* Ouro com glitter */
+.glitter{background:radial-gradient(circle,rgba(255,255,255,.95) 0 .7px,transparent 1.2px) 0 0/7px 7px,radial-gradient(circle,rgba(255,240,200,.85) 0 .6px,transparent 1.1px) 3px 4px/9px 9px,linear-gradient(110deg,#9c6a22 0%,#f7e3a3 16%,#c48d36 30%,#fff7da 44%,#b47f2e 58%,#f1d184 74%,#9c6a22 100%) 0 0/260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:glint 6s linear infinite;filter:drop-shadow(0 0 18px rgba(255,205,120,.35))}
+@keyframes glint{to{background-position:0 0,3px 4px,-260% 0}}
+
+/* Estrelinhas que piscam */
+.tw{position:absolute;width:var(--s,16px);height:var(--s,16px);color:#FFF4D2;pointer-events:none;filter:drop-shadow(0 0 6px rgba(255,214,140,.9));animation:twinkle var(--t,2.6s) ease-in-out var(--d,0s) infinite;z-index:4}
+.tw svg{width:100%;height:100%;display:block}
+@keyframes twinkle{0%,100%{transform:scale(0) rotate(0);opacity:0}45%{transform:scale(1) rotate(45deg);opacity:1}70%{transform:scale(.6) rotate(70deg);opacity:.7}}
+
+/* Botões */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:62px;padding:0 36px;font-family:var(--caps);font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;text-align:center;line-height:1.3;transition:transform .25s var(--ease),box-shadow .3s}
+.btn:active{transform:scale(.97)}
+.btn--gold{color:#3A2408;background:linear-gradient(180deg,#FCEDC6,#E5BE74 50%,#C08E3C);border:1px solid #F7E3A3;box-shadow:inset 0 1px 0 #fff6d8,0 16px 40px -10px rgba(0,0,0,.6),0 0 40px -6px rgba(255,200,120,.6);animation:glow 3.2s ease-in-out infinite}
+.btn--gold::after{content:'';position:absolute;top:-20%;bottom:-20%;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:shine 4s var(--ease) 1.6s infinite}
+.btn--gold:hover{transform:translateY(-2px)}
+@keyframes shine{0%{left:-60%}35%,100%{left:130%}}
+@keyframes glow{50%{box-shadow:inset 0 1px 0 #fff6d8,0 16px 40px -10px rgba(0,0,0,.6),0 0 60px 0 rgba(255,200,120,.75)}}
+.btn--line{color:var(--gold-hi);background:rgba(6,32,26,.3);border:1px solid rgba(217,178,106,.65)}
+.btn--line:hover{background:rgba(217,178,106,.1);transform:translateY(-2px)}
+.btn--wine{min-height:44px;padding:0 20px;font-size:12px;color:var(--gold-hi);background:radial-gradient(120% 160% at 50% 0%,var(--wine-hi),#4E0D18);border:1px solid var(--gold);box-shadow:inset 0 0 0 3px #4E0D18,inset 0 0 0 4px rgba(217,178,106,.5)}
+
+/* Ornamentos */
+.orn{display:flex;align-items:center;gap:14px;color:var(--gold);font-size:13px}
+.orn::before,.orn::after{content:'';height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{transform:scaleX(-1)}
+.orn--c{justify-content:center}
+.eyebrow{font-family:var(--caps);font-weight:500;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.corner{position:absolute;width:56px;height:56px;color:var(--gold);pointer-events:none}
+.corner.tl{left:10px;top:10px}.corner.tr{right:10px;top:10px;transform:scaleX(-1)}.corner.bl{left:10px;bottom:10px;transform:scaleY(-1)}.corner.br{right:10px;bottom:10px;transform:scale(-1)}
+
+/* Aparecer ao chegar na seção */
+.js .rv{opacity:0;transform:translateY(26px);filter:blur(6px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease);transition-delay:var(--rd,0s)}
+.js .rv.in{opacity:1;transform:none;filter:none}
+
+/* ========== TOPO ========== */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:var(--em-0)}
+.hero__img{position:absolute;inset:0;z-index:-3}
+.hero__img img{width:100%;height:100%;object-fit:cover;object-position:68% 50%;animation:arrive 2.6s var(--ease) both,breathe 20s ease-in-out 2.6s infinite alternate}
+@keyframes arrive{from{opacity:0;transform:scale(1.12);filter:brightness(2.2) blur(14px)}to{opacity:1;transform:scale(1.02);filter:none}}
+@keyframes breathe{from{transform:scale(1.02)}to{transform:scale(1.08)}}
+.hero__shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(5,28,21,.96) 0%,rgba(5,28,21,.84) 32%,rgba(5,28,21,.3) 56%,rgba(5,28,21,0) 72%),linear-gradient(180deg,rgba(5,28,21,.6) 0%,rgba(5,28,21,0) 24%,rgba(5,28,21,0) 72%,rgba(5,28,21,.92) 100%)}
+.bokeh{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.bokeh i{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,220,150,.7),rgba(255,200,120,.2) 45%,transparent 70%);filter:blur(1.5px);animation:drift var(--t,16s) ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(var(--dx,20px),var(--dy,-30px)) scale(1.1)}}
+canvas.snow{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.frame{position:absolute;inset:16px;border:1px solid rgba(217,178,106,.4);z-index:2;pointer-events:none}
+.frame::before{content:'';position:absolute;inset:6px;border:1px solid rgba(217,178,106,.16)}
+.hero .corner{z-index:2}
+/* Varal de luzes */
+.lights{position:absolute;left:0;right:0;top:0;height:70px;z-index:5;pointer-events:none}
+.lights svg{position:absolute;inset:0;width:100%;height:46px}
+.bulbs{position:absolute;inset:0;display:flex;justify-content:space-around;padding:0 1.5vw}
+.bulbs i{width:10px;height:15px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;margin-top:var(--y);background:var(--c);box-shadow:0 0 12px 3px var(--c),0 0 34px 8px color-mix(in srgb,var(--c) 35%,transparent);animation:blink 2.4s ease-in-out var(--d) infinite;position:relative}
+.bulbs i::before{content:'';position:absolute;left:2px;right:2px;top:-4px;height:5px;border-radius:1px;background:#3a3020}
+@keyframes blink{50%{opacity:.35;box-shadow:0 0 4px 1px var(--c)}}
+.nav{position:relative;z-index:6;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:70px;padding-bottom:10px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.brand b{font-family:var(--caps);font-weight:600;font-size:21px;letter-spacing:.1em}
+.brand small{font-family:var(--display);font-style:italic;font-weight:500;font-size:16px;color:var(--gold);margin-top:3px}
+.nav__links{display:flex;gap:30px;font-family:var(--caps);font-size:13px;letter-spacing:.12em;color:var(--mist)}
+.nav__links a{text-decoration:none;transition:color .2s}
+.nav__links a:hover{color:var(--gold-hi)}
+.hero__body{position:relative;z-index:3;flex:1;display:flex;align-items:center;padding-top:10px;padding-bottom:90px}
+.hero__copy{max-width:590px;position:relative}
+.hero h1{margin:16px 0 0;font-family:var(--display);font-weight:500;font-size:clamp(46px,5.4vw,80px);line-height:.98;letter-spacing:-.01em;color:var(--ivory);text-wrap:balance;text-shadow:0 2px 30px rgba(0,0,0,.4)}
+.hero h1 .g{display:block;font-style:italic;font-weight:600;font-size:1.08em;line-height:1.05;padding:0 .08em .08em 0}
+.hero__sub{margin:22px 0 0;font-size:21px;line-height:1.6;color:var(--cream);max-width:29em;text-shadow:0 1px 14px rgba(0,0,0,.55)}
+.hero__sub b{font-weight:500;color:var(--gold-hi)}
+.hero__ctas{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:32px}
+.from{font-family:var(--display);font-style:italic;font-weight:500;color:var(--cream);font-size:21px;line-height:1.3}
+.from b{font-style:normal;color:var(--gold-hi)}
+.seals{display:flex;gap:26px;margin-top:32px;flex-wrap:wrap}
+.seals span{display:flex;align-items:center;gap:10px;font-size:17px;color:var(--mist)}
+.seals i{width:32px;height:32px;flex:0 0 32px;border-radius:50%;border:1px solid rgba(217,178,106,.6);display:flex;align-items:center;justify-content:center;color:var(--gold);background:rgba(6,32,26,.5)}
+/* entrada do topo, em sequência */
+.in1,.in2,.in3,.in4,.in5{animation:rise 1.2s var(--ease) both}
+.in1{animation-delay:.5s}.in2{animation-delay:.75s}.in3{animation-delay:1s}.in4{animation-delay:1.25s}.in5{animation-delay:1.5s}
+@keyframes rise{from{opacity:0;transform:translateY(22px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+.notif{position:absolute;right:max(44px,6vw);bottom:110px;z-index:3;width:290px;padding:14px 16px;border-radius:18px;background:rgba(6,32,26,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(217,178,106,.35);box-shadow:0 30px 60px -20px rgba(0,0,0,.7);font-family:system-ui,-apple-system,sans-serif;animation:pop 1s 2.4s var(--ease) both,bob 5s ease-in-out 3.4s infinite}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.notif__head{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600}
+.notif__head small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:400}
+.ava{width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,var(--gold-hi),var(--gold));display:flex;align-items:center;justify-content:center;color:#3A2408;flex:0 0 30px}
+.notif p{margin:8px 0 10px;font-size:14px;color:var(--ivory)}
+.wave{display:flex;align-items:center;gap:10px}
+.wave i{width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:var(--gold);color:#3A2408;display:flex;align-items:center;justify-content:center}
+.wave span{flex:1;display:flex;align-items:center;gap:3px;height:22px}
+.wave span b{flex:1;background:var(--gold-hi);border-radius:2px;height:30%;animation:eq 1.1s ease-in-out infinite}
+.wave span b:nth-child(3n){animation-delay:.2s}.wave span b:nth-child(3n+1){animation-delay:.45s}.wave span b:nth-child(4n){animation-delay:.7s}
+@keyframes eq{50%{height:100%}}
+.wave small{font-size:11.5px;color:var(--muted)}
+
+/* Faixa dourada correndo */
+.ribbon-run{position:relative;z-index:4;overflow:hidden;padding:18px 0;background:linear-gradient(180deg,#E9C47C,#C69546);color:#3A2408;border-block:1px solid #F7E3A3;box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
+.ribbon-run__t{display:flex;width:max-content;animation:run 40s linear infinite}
+.ribbon-run span{display:flex;align-items:center;gap:28px;padding-right:28px;font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap}
+.ribbon-run span i{font-style:normal;font-size:12px}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* ========== SEÇÕES ========== */
+.sec{position:relative;padding:120px 0;background:radial-gradient(70% 60% at 50% 0%,rgba(30,110,80,.25),transparent 70%),var(--em-1)}
+.sec--deep{background:radial-gradient(60% 50% at 80% 20%,rgba(255,190,105,.10),transparent 70%),var(--em-0)}
+.damask{position:absolute;inset:0;opacity:.05;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='120' viewBox='0 0 90 120'%3E%3Cg fill='none' stroke='%23E8C882' stroke-width='1'%3E%3Cpath d='M45 8c10 14 22 20 22 34S55 64 45 76C35 64 23 56 23 42S35 22 45 8z'/%3E%3Cpath d='M45 30c5 7 10 10 10 16s-5 10-10 16c-5-6-10-10-10-16s5-9 10-16z'/%3E%3Cpath d='M0 98c10-8 20-8 30 0M60 98c10-8 20-8 30 0'/%3E%3C/g%3E%3C/svg%3E")}
+.head{text-align:center;max-width:760px;margin:0 auto 64px;position:relative}
+.head h2,.h2{margin:14px 0 0;font-family:var(--display);font-weight:500;font-size:clamp(40px,4.8vw,66px);line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+.head h2 em,.h2 em{font-style:italic;font-weight:600;color:var(--gold-hi)}
+.head p{margin:18px auto 0;color:var(--mist);font-size:21px;max-width:32em}
+
+/* Imagine a cena */
+.story{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:70px;align-items:center}
+.story__pic{position:relative;padding:10px;background:conic-gradient(from 200deg,#8a5d1f,#f7e3a3,#b07a2c,#fff3cf,#9a6a24,#e7c47d,#8a5d1f);box-shadow:0 40px 80px -30px rgba(0,0,0,.85),0 0 70px -20px rgba(255,190,110,.4)}
+.story__pic img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.story__pic .tag{position:absolute;left:28px;bottom:28px;padding:10px 16px;background:rgba(6,32,26,.7);backdrop-filter:blur(8px);border:1px solid rgba(247,227,163,.5);font-family:var(--display);font-style:italic;font-size:19px;color:var(--gold-hi)}
+.story__txt p{margin:0 0 18px;color:var(--cream);font-size:21px}
+.story__txt .h2{margin-bottom:20px}
+.story__txt p.big{font-family:var(--display);font-style:italic;font-weight:500;font-size:30px;line-height:1.3;color:var(--ivory)}
+.story__txt q{font-family:var(--script);font-size:46px;line-height:1;color:var(--gold-hi);quotes:none;display:block;margin:6px 0 16px;text-shadow:0 0 24px rgba(255,200,120,.35)}
+.story__txt .btn{margin-top:14px}
+
+/* Carta do Papai Noel */
+.letterbox{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:60px;align-items:center}
+.letter{position:relative;padding:54px 50px 46px;color:#3B2410;background:radial-gradient(120% 90% at 30% 10%,#FFF9EA,#F3E5C6 60%,#E8D3A6);box-shadow:0 40px 80px -30px rgba(0,0,0,.85),inset 0 0 60px rgba(160,110,40,.18);transform:rotate(-1.2deg)}
+.letter::before{content:'';position:absolute;inset:12px;border:1px solid rgba(156,106,34,.4);pointer-events:none}
+.letter__top{display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:space-between;align-items:center;font-family:var(--caps);font-size:12px;letter-spacing:.22em;color:#8C1526;margin-bottom:20px}
+.letter__top span:last-child{font-family:var(--text);font-style:italic;letter-spacing:0;font-size:15px;color:#7a5a30}
+.letter p{margin:0 0 14px;font-family:var(--display);font-weight:500;font-size:27px;line-height:1.42}
+.letter .f{position:relative;display:inline;background:linear-gradient(90deg,transparent,#C99A45,transparent) 0 100%/100% 2px no-repeat;font-style:italic;font-weight:700;color:#8C1526;transition:opacity .45s,filter .45s,transform .45s}
+.letter .f.sw{opacity:0;filter:blur(6px)}
+.letter__sign{font-family:var(--script);font-size:46px;color:#7a1220;margin:10px 0 0;line-height:1}
+.letter .seal{position:absolute;right:-26px;bottom:-26px;width:94px;height:94px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#C0303F,#6E1424 62%,#4A0B17);display:flex;align-items:center;justify-content:center;color:#F3C9A0;font-family:var(--script);font-size:40px;box-shadow:0 10px 24px rgba(0,0,0,.45),inset 0 0 0 6px rgba(0,0,0,.12),inset 0 0 0 8px rgba(243,201,160,.25)}
+.dots{display:flex;gap:8px;margin-top:16px}
+.dots i{width:28px;height:3px;background:rgba(156,106,34,.3);border-radius:2px;overflow:hidden;position:relative}
+.dots i.on::after{content:'';position:absolute;inset:0;background:#8C1526;animation:fill 4s linear both}
+@keyframes fill{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}
+.fields{display:flex;flex-direction:column;gap:14px}
+.fields h3{margin:0 0 6px;font-family:var(--display);font-weight:500;font-size:38px;line-height:1.08}
+.fields h3 em{font-style:italic;font-weight:600;color:var(--gold-hi)}
+.fields > p{margin:0 0 10px;color:var(--mist)}
+.field{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-top:1px solid rgba(217,178,106,.2)}
+.field i{flex:0 0 38px;height:38px;border-radius:50%;border:1px solid rgba(217,178,106,.55);display:flex;align-items:center;justify-content:center;color:var(--gold-hi);font-style:normal;font-family:var(--caps);font-size:14px}
+.field b{display:block;font-family:var(--caps);font-weight:500;font-size:14px;letter-spacing:.12em;color:var(--gold)}
+.field span{font-size:18px;color:var(--cream)}
+
+/* Comparação */
+.vs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;max-width:960px;margin:0 auto;border:1px solid rgba(217,178,106,.3)}
+.vs__col{padding:40px 40px 34px}
+.vs__col:first-child{background:rgba(0,0,0,.18);color:var(--muted)}
+.vs__col:last-child{position:relative;background:radial-gradient(90% 70% at 50% 0%,rgba(255,190,105,.14),transparent 70%),linear-gradient(180deg,#14503C,#0B3127);box-shadow:0 0 0 1px var(--gold),0 40px 80px -30px rgba(0,0,0,.8),0 0 60px -20px rgba(255,190,110,.45)}
+.vs h3{margin:0 0 24px;font-family:var(--caps);font-weight:600;font-size:15px;letter-spacing:.16em}
+.vs__col:last-child h3{color:var(--gold-hi)}
+.vs ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.vs li{display:flex;gap:14px;align-items:flex-start;font-size:19px;line-height:1.45}
+.vs li svg{flex:0 0 20px;margin-top:5px}
+.vs__col:first-child li{text-decoration:line-through;text-decoration-color:rgba(149,169,156,.5)}
+.vs__col:last-child li{color:var(--ivory)}
+
+/* Como funciona */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;position:relative}
+.steps::before{content:'';position:absolute;left:16%;right:16%;top:92px;height:1px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px,transparent 6px 14px);opacity:.5}
+.step{position:relative;padding:44px 30px 36px;text-align:center;border:1px solid rgba(217,178,106,.3);background:linear-gradient(180deg,rgba(15,58,45,.92),rgba(10,43,34,.92));transition:transform .4s var(--ease),border-color .4s}
+.step:hover{transform:translateY(-6px);border-color:var(--gold)}
+.step .corner{width:26px;height:26px}
+.step__n{font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.24em;color:var(--gold)}
+.step__ic{position:relative;width:72px;height:72px;margin:14px auto 18px;border-radius:50%;border:1px solid rgba(217,178,106,.55);display:flex;align-items:center;justify-content:center;color:var(--gold-hi);background:radial-gradient(circle,rgba(217,178,106,.2),var(--em-1) 70%)}
+.step__ic::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(247,227,163,.4);animation:ring 3s ease-out infinite}
+.step:nth-child(2) .step__ic::after{animation-delay:1s}.step:nth-child(3) .step__ic::after{animation-delay:2s}
+@keyframes ring{from{transform:scale(.9);opacity:.9}to{transform:scale(1.35);opacity:0}}
+.step h3{margin:0;font-family:var(--display);font-weight:600;font-style:italic;font-size:30px}
+.step p{margin:10px 0 0;color:var(--mist);font-size:18px}
+
+/* As surpresas */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.card{position:relative;display:flex;flex-direction:column}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 6px 6px;background:conic-gradient(from 200deg,#8a5d1f,#f7e3a3,#b07a2c,#fff3cf,#9a6a24,#e7c47d,#8a5d1f);box-shadow:0 34px 70px -24px rgba(0,0,0,.8),0 0 60px -14px rgba(255,190,110,.35);transition:transform .6s var(--ease),box-shadow .6s;animation:float 7s ease-in-out infinite}
+.card:nth-child(2) .arch{animation-delay:-2.3s}.card:nth-child(3) .arch{animation-delay:-4.6s}
+@keyframes float{50%{transform:translateY(-10px)}}
+.card:hover .arch{box-shadow:0 40px 80px -24px rgba(0,0,0,.85),0 0 90px -10px rgba(255,200,120,.6)}
+.arch__in{position:absolute;inset:8px;border-radius:999px 999px 2px 2px;overflow:hidden}
+.arch__in img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.card:hover .arch__in img{transform:scale(1.06)}
+.arch__in::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,transparent 35%,rgba(255,240,200,.35) 50%,transparent 65%);background-size:250% 100%;background-position:150% 0;animation:sweep 6s ease-in-out infinite}
+.card:nth-child(2) .arch__in::before{animation-delay:2s}.card:nth-child(3) .arch__in::before{animation-delay:4s}
+@keyframes sweep{0%,60%{background-position:150% 0}100%{background-position:-60% 0}}
+.arch__in::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(6,32,26,.85))}
+.play{cursor:pointer;color:var(--ivory);position:absolute;left:50%;bottom:22px;z-index:2;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:9px 18px 9px 10px;border-radius:999px;background:rgba(6,32,26,.6);border:1px solid rgba(247,227,163,.6);backdrop-filter:blur(8px);font-family:var(--caps);font-size:12px;letter-spacing:.12em;white-space:nowrap}
+.play i{position:relative;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#3A2408;display:flex;align-items:center;justify-content:center}
+.play i::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--gold-hi);animation:ring 2.2s ease-out infinite}
+.badge{position:absolute;top:22px;left:50%;transform:translateX(-50%);z-index:2;padding:6px 14px;font-family:var(--caps);font-size:11px;letter-spacing:.16em;color:#3A2408;background:linear-gradient(180deg,#FBEBC2,#D9B26A);white-space:nowrap}
+.card h3{margin:28px 0 0;font-family:var(--display);font-weight:600;font-style:italic;font-size:34px;line-height:1.1;text-align:center}
+.card p{margin:10px 0 0;color:var(--mist);text-align:center;font-size:18px}
+.note{text-align:center;margin:50px 0 0;color:var(--mist);font-family:var(--display);font-style:italic;font-size:22px}
+
+/* Pacotes */
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.plan{position:relative;display:flex;flex-direction:column;padding:36px 28px 30px;border:1px solid rgba(217,178,106,.3);background:linear-gradient(180deg,rgba(15,58,45,.8),rgba(8,36,28,.9))}
+.plan .corner{width:24px;height:24px}
+.plan__name{font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.16em;color:var(--gold)}
+.plan__price{display:flex;align-items:flex-start;gap:6px;margin:12px 0 2px;font-family:var(--display);font-weight:500;line-height:1}
+.plan__price small{font-size:24px;margin-top:12px;color:var(--gold)}
+.plan__price b{font-weight:500;font-size:76px}
+.plan__was{font-size:17px;color:var(--muted);margin:0}
+.plan li b.hl{font-weight:500;color:var(--gold-hi)}
+.plan__was s{color:var(--mist)}.plan__was b{font-weight:500;color:var(--gold-hi)}
+.plan__lead{color:var(--cream);font-family:var(--display);font-style:italic;font-size:21px;margin:6px 0 18px}
+.plan__pic{overflow:hidden;aspect-ratio:16/9;margin:0 0 20px;border:1px solid rgba(217,178,106,.35)}
+.plan__pic img{width:100%;height:100%;object-fit:cover}
+.plan ul{list-style:none;margin:0 0 26px;padding:0;display:flex;flex-direction:column;gap:11px;flex:1}
+.plan li{position:relative;padding-left:26px;font-size:18px;line-height:1.45;color:var(--cream)}
+.plan li::before{content:'✦';position:absolute;left:0;top:2px;color:var(--gold);font-size:13px}
+.plan .btn{width:100%;padding:0 18px;font-size:14px}
+.plan--best{border-color:var(--gold);background:radial-gradient(90% 60% at 50% 0%,rgba(255,190,105,.16),transparent 70%),linear-gradient(180deg,#14503C,#0B3127);box-shadow:0 40px 90px -30px rgba(0,0,0,.8),0 0 70px -20px rgba(255,190,110,.5);transform:translateY(-16px)}
+.ribbon{position:absolute;top:-17px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:8px 24px;font-family:var(--caps);font-weight:600;font-size:12px;letter-spacing:.14em;color:#3A2408;background:linear-gradient(180deg,#FBEBC2,#D9B26A);clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%)}
+.plans--2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px;margin:0 auto}
+.plan__price small+b+small,.plan__price b+small{font-size:30px;margin-top:8px;color:var(--gold-hi)}
+.bump{max-width:640px;margin:34px auto 0;text-align:center;color:var(--cream);font-size:19px;padding:16px 20px;border:1px dashed rgba(217,178,106,.5)}
+.bump b{font-weight:500;color:var(--gold-hi)}
+.secure{display:flex;justify-content:center;gap:10px;align-items:center;margin-top:36px;color:var(--muted);font-size:17px;text-align:center}
+
+/* Garantia */
+.guar{display:grid;grid-template-columns:auto minmax(0,1fr);gap:46px;align-items:center;max-width:940px;margin:0 auto;padding:48px;border:1px solid rgba(217,178,106,.35);position:relative;background:linear-gradient(180deg,rgba(15,58,45,.6),rgba(8,36,28,.6))}
+.wax{width:156px;height:156px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#B8303F,#6E1424 60%,#4A0B17);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#F3C9A0;box-shadow:0 14px 30px rgba(0,0,0,.5),inset 0 0 0 8px rgba(0,0,0,.12),inset 0 0 0 10px rgba(243,201,160,.25);animation:sway 6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(-6deg) scale(1.03)}}
+.wax b{font-family:var(--caps);font-size:13px;letter-spacing:.16em}
+.wax span{font-family:var(--script);font-size:38px;line-height:1}
+.guar h2{margin:0;font-family:var(--display);font-weight:500;font-size:clamp(34px,3.6vw,50px);line-height:1.05}
+.guar h2 em{font-style:italic;font-weight:600;color:var(--gold-hi)}
+.guar p{margin:14px 0 0;color:var(--cream);font-size:20px}
+
+/* Dúvidas */
+.faq{max-width:840px;margin:0 auto;border-top:1px solid rgba(217,178,106,.25)}
+.faq details{border-bottom:1px solid rgba(217,178,106,.25)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-family:var(--display);font-weight:500;font-size:27px;line-height:1.2;transition:color .2s}
+.faq summary:hover{color:var(--gold-hi)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-family:var(--display);color:var(--gold);font-size:34px;line-height:1;transition:transform .35s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{margin:0 0 24px;color:var(--cream);max-width:62ch}
+.faq details[open] p{animation:rise .6s var(--ease) both}
+
+/* Final */
+.final{position:relative;padding:150px 0 160px;text-align:center;overflow:hidden;isolation:isolate}
+.final__img{position:absolute;inset:0;z-index:-2}
+.final__img img{width:100%;height:100%;object-fit:cover;object-position:60% 40%;filter:blur(2px) brightness(.8) saturate(1.1)}
+.final::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(55% 60% at 50% 50%,rgba(6,32,26,.78),rgba(6,32,26,.4) 70%,rgba(6,32,26,.92))}
+.final .wrap{position:relative;z-index:2}
+.final h2{margin:18px auto 0;font-family:var(--display);font-weight:600;font-style:italic;font-size:clamp(46px,6.4vw,92px);line-height:1;max-width:13ch;text-wrap:balance}
+.final__sub{margin:22px auto 0;max-width:30em;color:var(--cream);font-size:21px}
+.count{display:flex;justify-content:center;gap:14px;margin:40px 0}
+.count div{min-width:92px;padding:16px 8px 12px;border:1px solid rgba(217,178,106,.5);background:rgba(6,32,26,.6);backdrop-filter:blur(6px)}
+.count b{display:block;font-family:var(--display);font-size:52px;font-weight:500;line-height:1;color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.count b.tick{animation:tick .5s var(--ease)}
+@keyframes tick{from{transform:translateY(-8px);opacity:.3}to{transform:none;opacity:1}}
+.count span{font-family:var(--caps);font-size:11px;letter-spacing:.16em;color:var(--muted)}
+.sign{font-family:var(--script);font-size:52px;color:var(--gold-hi);margin:34px 0 0;line-height:1.1;text-shadow:0 0 24px rgba(255,200,120,.35)}
+.foot{padding:44px 0 120px;background:var(--em-0);text-align:center;color:var(--muted);font-size:17px;border-top:1px solid rgba(217,178,106,.2)}
+.foot b{display:block;font-family:var(--caps);font-weight:600;color:var(--ivory);font-size:18px;letter-spacing:.1em;margin-bottom:8px}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;padding:12px max(16px,env(safe-area-inset-left,0px)) calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,transparent,rgba(6,32,26,.95) 40%);transform:translateY(130%);transition:transform .45s var(--ease)}
+.dock.on{transform:none}
+.dock .btn{width:100%;min-height:56px;font-size:14px}
+
+/* Ver exemplo (texto com play) */
+.see{display:inline-flex;align-items:center;gap:12px;padding:0;background:none;border:0;cursor:pointer;font-family:var(--caps);font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-hi)}
+.see i{position:relative;width:40px;height:40px;border-radius:50%;border:1px solid rgba(247,227,163,.7);display:flex;align-items:center;justify-content:center;background:rgba(6,32,26,.5)}
+.see i::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--gold-hi);animation:ring 2.4s ease-out infinite}
+.see:hover{color:#fff}
+.deadline{margin:18px 0 0;font-family:var(--display);font-style:italic;font-weight:500;font-size:19px;color:var(--gold-hi)}
+.deadline::before{content:'✦ ';font-style:normal;font-size:13px;color:var(--gold)}
+.hero__mob{margin:14px auto 0;max-width:22em;font-size:19px;line-height:1.45;color:var(--cream);text-shadow:0 1px 12px rgba(0,0,0,.7)}
+.notif{cursor:pointer}
+.notif:hover{border-color:var(--gold-hi)}
+
+/* Prova: o vídeo e a reação */
+.proof{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px;max-width:720px;margin:0 auto}
+.vf{display:flex;flex-direction:column;align-items:center;gap:16px}
+.vframe{position:relative;width:100%;max-width:320px;aspect-ratio:9/16;padding:8px;border-radius:30px;background:conic-gradient(from 200deg,#8a5d1f,#f7e3a3,#b07a2c,#fff3cf,#9a6a24,#e7c47d,#8a5d1f);box-shadow:0 40px 80px -30px rgba(0,0,0,.85),0 0 60px -16px rgba(255,190,110,.45);cursor:pointer;border:0;display:block;transition:transform .5s var(--ease)}
+.vframe:hover{transform:translateY(-6px)}
+.vframe__in{position:absolute;inset:8px;border-radius:23px;overflow:hidden;background:#000}
+.vframe__in img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.vframe:hover .vframe__in img{transform:scale(1.05)}
+.vframe__in::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,32,26,.1),rgba(6,32,26,.15) 50%,rgba(6,32,26,.85))}
+.vframe .bigplay{position:absolute;left:50%;top:50%;z-index:2;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#3A2408;background:linear-gradient(180deg,#FCEDC6,#D9B26A);box-shadow:0 0 40px rgba(255,200,120,.6)}
+.vframe .bigplay::after{content:'';position:absolute;inset:-8px;border-radius:50%;border:1px solid var(--gold-hi);animation:ring 2.2s ease-out infinite}
+.vframe .cap{position:absolute;left:0;right:0;bottom:22px;z-index:2;text-align:center;font-family:var(--caps);font-size:12px;letter-spacing:.16em;color:var(--gold-hi)}
+.vf h3{margin:0;font-family:var(--display);font-weight:600;font-style:italic;font-size:28px;text-align:center;line-height:1.15}
+.vf p{margin:0;color:var(--mist);font-size:17px;text-align:center;max-width:18em}
+.ctarow{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:56px;text-align:center}
+.ctarow small{font-family:var(--display);font-style:italic;font-size:18px;color:var(--mist)}
+
+/* Janela do vídeo */
+.vmodal{position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;padding:max(20px,env(safe-area-inset-top,0px)) 16px;background:rgba(3,16,12,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.vmodal.on{opacity:1;visibility:visible}
+.vmodal__box{position:relative;width:min(420px,100%);max-height:calc(100svh - 40px);aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;border:1px solid rgba(247,227,163,.5);box-shadow:0 40px 100px rgba(0,0,0,.8);transform:scale(.94);transition:transform .45s var(--ease)}
+.vmodal.on .vmodal__box{transform:none}
+.vmodal video{width:100%;height:100%;object-fit:contain;background:#000;display:block}
+.vmodal__soon{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:flex-end;gap:10px;padding:30px 24px;text-align:center;background:linear-gradient(180deg,transparent 30%,rgba(6,32,26,.95)),var(--poster) center/cover no-repeat}
+.vmodal__soon b{font-family:var(--display);font-style:italic;font-weight:600;font-size:28px;line-height:1.1}
+.vmodal__soon span{color:var(--mist);font-size:17px}
+.vmodal.err .vmodal__soon{display:flex}.vmodal.err video{display:none}
+.vmodal__x{position:absolute;top:max(16px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid rgba(247,227,163,.6);background:rgba(6,32,26,.7);color:var(--gold-hi);font-size:26px;line-height:1;cursor:pointer}
+.vmodal__cta{position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:2;min-height:50px;font-size:13px;white-space:nowrap}
+
+/* WhatsApp flutuante */
+.wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:55;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.45);transition:transform .25s var(--ease),bottom .4s var(--ease)}
+.wa:hover{transform:scale(1.06)}
+.wa svg{width:30px;height:30px}
+
+/* Brilho que segue o mouse */
+.spk{position:fixed;z-index:60;width:10px;height:10px;pointer-events:none;color:#FFF1C8;filter:drop-shadow(0 0 4px rgba(255,210,130,.9));animation:spk .9s ease-out forwards}
+.spk svg{width:100%;height:100%;display:block}
+@keyframes spk{from{opacity:1;transform:translate(0,0) scale(1) rotate(0)}to{opacity:0;transform:translate(var(--x),var(--y)) scale(.2) rotate(140deg)}}
+
+/* ========== CELULAR ========== */
+@media (max-width:900px){
+  body{font-size:19px}
+  .nav__links{display:none}
+  .nav{padding-top:58px}
+  .lights{height:56px}.lights svg{height:38px}
+  .bulbs i:nth-child(n+9){display:none}
+  .brand b{font-size:16px}.brand small{font-size:14px}
+  .hero__img img{object-position:50% 50%}
+  .hero__shade{background:linear-gradient(180deg,rgba(5,28,21,.94) 0%,rgba(5,28,21,.62) 36%,rgba(5,28,21,.1) 54%,rgba(5,28,21,.2) 66%,rgba(5,28,21,.96) 92%)}
+  .hero__body{align-items:flex-start;padding-top:4px;padding-bottom:40px}
+  .hero__copy{display:flex;flex-direction:column;align-items:center;text-align:center;min-height:calc(100svh - 150px);max-width:none}
+  .eyebrow{font-size:11px;letter-spacing:.2em}
+  .hero h1{font-size:clamp(36px,10vw,50px);margin-top:12px}
+  .hero__sub{display:none}
+  .hero__lower{margin-top:auto;width:100%}
+  .hero__ctas{flex-direction:column;gap:12px;margin-top:0}
+  .hero__ctas .btn{width:100%}
+  .seals{justify-content:center;gap:10px 18px;margin-top:18px}
+  .seals span{font-size:16px}
+  .seals i{width:26px;height:26px;flex-basis:26px}
+  .notif{display:none}
+  .frame{inset:10px}.corner{width:40px;height:40px}
+  .sec{padding:88px 0}
+  .head{margin-bottom:46px}
+  .head p{font-size:19px}
+  .story,.letterbox{grid-template-columns:minmax(0,1fr);gap:40px}
+  .story__txt q{font-size:40px}
+  .story__txt .h2{margin-bottom:20px}
+.story__txt p.big{font-size:26px}
+  .letter{padding:40px 26px 36px;transform:none}
+  .letter p{font-size:23px}
+  .letter .seal{width:72px;height:72px;right:-6px;bottom:-24px;font-size:30px}
+  .fields h3{font-size:32px}
+  .vs{grid-template-columns:minmax(0,1fr)}
+  .vs__col{padding:32px 24px}
+  .steps,.cards,.plans,.plans--2{grid-template-columns:minmax(0,1fr)}
+  .steps::before{display:none}
+  .cards{gap:50px}
+  .arch{width:min(320px,82vw);margin:0 auto}
+  .plan--best{transform:none;order:-1;margin-top:14px}
+  .guar{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;padding:38px 22px;gap:26px}
+  .count{gap:8px}.count div{min-width:70px}.count b{font-size:38px}
+  .final{padding:110px 0 120px}
+  .dock{display:block}
+  .see{margin-top:6px}
+  .deadline{font-size:17px;margin-top:12px}
+  .proof{gap:14px}
+  .vframe{border-radius:22px;padding:6px}.vframe__in{inset:6px;border-radius:17px}
+  .vframe .bigplay{width:58px;height:58px;margin:-29px 0 0 -29px}
+  .vframe .cap{font-size:10px;bottom:14px}
+  .vf h3{font-size:22px}.vf p{font-size:15px}
+  .ctarow{margin-top:40px}.ctarow .btn{width:100%}
+  .wa{width:52px;height:52px}
+  .wa{opacity:0;visibility:hidden;transform:scale(.6)}
+  body.dock-on .wa{opacity:1;visibility:visible;transform:none;bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+  .wa{transition:opacity .3s,transform .4s var(--ease),visibility .3s}
+  .tw:nth-of-type(n+4){display:none}
+}
+@media (min-width:901px){.mob{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js .rv{opacity:1;transform:none;filter:none}}
+</style>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></symbol></defs></svg>
+
+<!-- TOPO -->
+<header class="hero" id="topo">
+  <div class="hero__img">
+    <picture>
+      <source media="(max-width: 900px)" srcset="img/hero-mob.webp">
+      <img src="img/hero-desk.webp" alt="Papai Noel sentado numa poltrona ao lado da árvore de Natal acesa, envolto por um rastro de brilho dourado, segurando um presente verde" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="hero__shade"></div>
+  <div class="bokeh" aria-hidden="true">
+    <i style="left:6%;top:18%;width:110px;height:110px;--t:18s"></i><i style="left:28%;top:74%;width:70px;height:70px;--t:13s;--dx:-30px"></i>
+    <i style="left:48%;top:12%;width:80px;height:80px;--t:20s"></i><i style="left:2%;top:58%;width:80px;height:80px;--t:15s"></i>
+    <i style="left:40%;top:86%;width:110px;height:110px;--t:17s;--dy:-50px"></i><i style="left:86%;top:20%;width:90px;height:90px;--t:19s;--dx:-30px"></i>
+  </div>
+  <canvas class="snow" aria-hidden="true"></canvas>
+
+  <!-- estrelinhas em volta do Papai Noel -->
+  <span class="tw" style="left:60%;top:30%;--s:22px;--d:.2s"><svg><use href="#star"/></svg></span>
+  <span class="tw" style="left:68%;top:20%;--s:14px;--d:1.1s;--t:2.2s"><svg><use href="#star"/></svg></span>
+  <span class="tw" style="left:84%;top:40%;--s:18px;--d:.7s"><svg><use href="#star"/></svg></span>
+  <span class="tw" style="left:63%;top:62%;--s:16px;--d:1.6s;--t:3s"><svg><use href="#star"/></svg></span>
+  <span class="tw" style="left:90%;top:66%;--s:24px;--d:2.1s"><svg><use href="#star"/></svg></span>
+
+  <div class="lights" aria-hidden="true">
+    <svg viewBox="0 0 1000 46" preserveAspectRatio="none"><path d="M0 4 Q 42 34 83 6 T 166 6 T 250 6 T 333 6 T 416 6 T 500 6 T 583 6 T 666 6 T 750 6 T 833 6 T 916 6 T 1000 6" fill="none" stroke="#22180c" stroke-width="2.4"/></svg>
+    <div class="bulbs">
+      <i style="--c:#FFD27A;--y:16px;--d:0s"></i><i style="--c:#FF6B5B;--y:24px;--d:.5s"></i><i style="--c:#FFF1C8;--y:14px;--d:1s"></i><i style="--c:#FFD27A;--y:22px;--d:.2s"></i>
+      <i style="--c:#FF6B5B;--y:12px;--d:1.3s"></i><i style="--c:#FFF1C8;--y:24px;--d:.7s"></i><i style="--c:#FFD27A;--y:16px;--d:1.6s"></i><i style="--c:#FF6B5B;--y:22px;--d:.3s"></i>
+      <i style="--c:#FFF1C8;--y:12px;--d:.9s"></i><i style="--c:#FFD27A;--y:24px;--d:1.4s"></i><i style="--c:#FF6B5B;--y:16px;--d:.1s"></i><i style="--c:#FFF1C8;--y:22px;--d:1.1s"></i>
+      <i style="--c:#FFD27A;--y:14px;--d:.6s"></i><i style="--c:#FF6B5B;--y:24px;--d:1.8s"></i><i style="--c:#FFF1C8;--y:16px;--d:.4s"></i><i style="--c:#FFD27A;--y:22px;--d:1.2s"></i>
+    </div>
+  </div>
+  <div class="frame" aria-hidden="true"></div>
+  <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/><path d="M10 62V26c0-9 7-16 16-16h36"/><circle cx="22" cy="22" r="3" fill="currentColor"/></svg>
+  <svg class="corner tr" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/><path d="M10 62V26c0-9 7-16 16-16h36"/><circle cx="22" cy="22" r="3" fill="currentColor"/></svg>
+  <svg class="corner bl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/><path d="M10 62V26c0-9 7-16 16-16h36"/><circle cx="22" cy="22" r="3" fill="currentColor"/></svg>
+  <svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/><path d="M10 62V26c0-9 7-16 16-16h36"/><circle cx="22" cy="22" r="3" fill="currentColor"/></svg>
+
+  <nav class="nav wrap in1" aria-label="Principal">
+    <a class="brand" href="#topo"><b class="glitter">Papai Noel em Casa</b><small>Correio oficial do Polo Norte</small></a>
+    <div class="nav__links"><a href="#exemplo">Exemplo</a><a href="#cena">A surpresa</a><a href="#como">Como funciona</a><a href="#pacotes">Pacotes</a><a href="#duvidas">Dúvidas</a></div>
+    <a class="btn btn--wine" href="#pacotes">Pedir</a>
+  </nav>
+
+  <div class="hero__body wrap">
+    <div class="hero__copy">
+      <div class="eyebrow in2">✦ Natal 2026 ✦</div>
+      <h1 class="in3">Uma visita do Papai Noel <span class="g glitter">na sua própria sala.</span></h1>
+      <p class="hero__mob mob in4">Mande a foto da sala, do quarto ou de onde quiser. Ele aparece ali e chama seu filho pelo nome.</p>
+      <p class="hero__sub in4">Você manda a foto de um cantinho da casa. O Papai Noel aparece <b>exatamente ali</b>, chama seu filho pelo nome, fala da escola, da conquista do ano e avisa que o presente já está no trenó.</p>
+      <div class="hero__lower in5">
+        <div class="hero__ctas">
+          <a class="btn btn--gold" href="#pacotes">Quero esse momento</a>
+          <span class="from">a partir de <b>R$ 37,90</b></span>
+          <button class="see js-video" type="button" data-video="recado"><i><svg width="13" height="13" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></i>Ver um exemplo</button>
+        </div>
+        <div class="seals">
+          <span><i><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i>Pronto em até 24h</span>
+          <span><i><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></i>Sem foto da criança</span>
+          <span><i><svg width="13" height="13" aria-hidden="true"><use href="#star"/></svg></i>Garantia mágica</span>
+        </div>
+        <p class="deadline">Pedidos até 22/12 chegam antes do Natal</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="notif js-video" data-video="recado" role="button" tabindex="0" aria-label="Ver um exemplo de vídeo">
+    <div class="notif__head"><span class="ava"><svg width="13" height="13"><use href="#star"/></svg></span>Papai Noel em Casa<small>agora</small></div>
+    <p>Ho-ho-ho! O vídeo do Miguel chegou. 🎅</p>
+    <div class="wave"><i><svg width="11" height="11" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></i><span><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></span><small>0:42</small></div>
+  </div>
+</header>
+
+<div class="ribbon-run" aria-hidden="true"><div class="ribbon-run__t">
+  <span>Com o nome do seu filho <i>✦</i> No cantinho da sua casa <i>✦</i> Pronto em até 24 horas <i>✦</i> Para o celular ou para a TV <i>✦</i> Se não ficar mágico, a gente refaz <i>✦</i> Pedidos até 22/12 chegam antes do Natal <i>✦</i></span>
+  <span>Com o nome do seu filho <i>✦</i> No cantinho da sua casa <i>✦</i> Pronto em até 24 horas <i>✦</i> Para o celular ou para a TV <i>✦</i> Se não ficar mágico, a gente refaz <i>✦</i> Pedidos até 22/12 chegam antes do Natal <i>✦</i></span>
+</div></div>
+
+<main>
+<!-- PROVA: O VÍDEO E A REAÇÃO -->
+<section class="sec" id="exemplo">
+  <div class="damask" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Veja um exemplo. <em>E a reação que ele causa.</em></h2>
+      <p>Dê o play nos dois. É isso que chega no seu WhatsApp, e é isso que acontece na sua sala.</p>
+    </div>
+    <div class="proof">
+      <div class="vf rv">
+        <!-- Vídeo: coloque o arquivo em videos/recado.mp4 (ou troque em CONFIG no fim da página) -->
+        <button class="vframe js-video" type="button" data-video="recado" aria-label="Assistir ao exemplo do Recado do Papai Noel"><span class="vframe__in"><img src="img/poster-recado.jpg" alt="" loading="lazy"></span><span class="bigplay"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="cap">O vídeo</span></button>
+        <h3>O recado</h3>
+        <p>O Papai Noel na sala da família, falando o nome da criança.</p>
+      </div>
+      <div class="vf rv" style="--rd:.12s">
+        <!-- Vídeo: coloque o arquivo em videos/reacao.mp4 -->
+        <button class="vframe js-video" type="button" data-video="reacao" aria-label="Assistir à reação de uma criança"><span class="vframe__in"><img src="img/cena.webp" alt="" loading="lazy" style="object-position:30% 50%"></span><span class="bigplay"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="cap">A reação</span></button>
+        <h3>A reação</h3>
+        <p>Uma criança de verdade vendo o Papai Noel pela primeira vez.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGINE A CENA -->
+<section class="sec sec--deep" id="cena">
+  <div class="wrap story">
+    <div class="story__pic rv">
+      <img src="img/cena.webp" alt="Família de costas na sala, assistindo na TV o Papai Noel sentado na mesma sala, ao lado da árvore de Natal" loading="lazy">
+      <span class="tag">A noite de Natal na sua sala</span>
+    </div>
+    <div class="story__txt">
+      <div class="eyebrow rv">Imagine a cena</div>
+      <h2 class="h2 rv" style="--rd:.1s">Você dá o play. E ele está <em>ali, na sua sala.</em></h2>
+      <p class="big rv" style="--rd:.2s">Ao lado da mesma árvore, no mesmo sofá. Ele olha para a câmera, sorri e diz:</p>
+      <q class="rv" style="--rd:.3s">"Oi, Miguel!"</q>
+      <p class="rv" style="--rd:.4s">Seu filho congela. Depois olha para o sofá, olha para a TV e olha para você. O Papai Noel sabe o nome da escola, sabe que ele aprendeu a ler e sabe qual é o presente.</p>
+      <p class="rv" style="--rd:.5s">É a prova que faltava: <b style="color:var(--gold-hi);font-weight:500">o Papai Noel esteve aqui.</b> E você estará com o celular na mão para gravar essa reação.</p>
+      <a class="btn btn--gold rv" style="--rd:.6s" href="#pacotes">Quero ver essa reação</a>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ELE FALA -->
+<section class="sec" id="recado">
+  <div class="damask" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Nada de vídeo genérico. <em>Cada palavra é sobre o seu filho.</em></h2>
+      <p>O recado já vem escrito pelo Polo Norte. Você só completa as lacunas, e o Papai Noel fala como se conhecesse a sua família de verdade.</p>
+    </div>
+    <div class="letterbox">
+      <div class="rv">
+        <div class="letter" aria-live="polite">
+          <div class="letter__top"><span>Polo Norte · Recado oficial</span><span>exemplo</span></div>
+          <p>Ho-ho-ho! Oi, <span class="f" data-k="n">Miguel</span>! Aqui é o Papai Noel, direto da sua sala.</p>
+          <p>Quem me contou foi <span class="f" data-k="p">o papai Rafael</span>: este ano, lá na escola <span class="f" data-k="e">Pequeno Príncipe</span>, você <span class="f" data-k="c">aprendeu a ler sozinho</span>. Estou muito orgulhoso!</p>
+          <p>E olha só: a sua <span class="f" data-k="g">bicicleta vermelha</span> já está no meu trenó.</p>
+          <div class="letter__sign">Papai Noel</div>
+          <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+          <div class="seal" aria-hidden="true">PN</div>
+        </div>
+      </div>
+      <div class="fields">
+        <h3 class="rv">Você preenche. <em>Ele fala.</em></h3>
+        <p class="rv" style="--rd:.05s">Leva 2 minutos, logo depois do pagamento:</p>
+        <div class="field rv" style="--rd:.1s"><i>1</i><div><b>O nome da criança</b><span>Dito pelo próprio Papai Noel, olhando para a câmera.</span></div></div>
+        <div class="field rv" style="--rd:.15s"><i>2</i><div><b>Quem contou para ele</b><span>Os pais, os avós, os padrinhos.</span></div></div>
+        <div class="field rv" style="--rd:.2s"><i>3</i><div><b>A escola e a conquista do ano</b><span>Aprendeu a ler, largou a chupeta, fez um amigo novo.</span></div></div>
+        <div class="field rv" style="--rd:.25s"><i>4</i><div><b>O presente</b><span>Aquele que está na cartinha.</span></div></div>
+        <div class="field rv" style="--rd:.3s"><i>✦</i><div><b>Um recado livre</b><span>Quer que ele fale mais alguma coisa? Escreva aqui.</span></div></div>
+      </div>
+    </div>
+    <div class="ctarow rv">
+      <a class="btn btn--gold" href="#pacotes">Quero o recado do meu filho</a>
+      <small>a partir de R$ 37,90 · pronto em até 24h</small>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARAÇÃO -->
+<section class="sec sec--deep">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Por que este vídeo <em>convence até os mais espertos.</em></h2>
+      <p>Criança de hoje percebe quando o vídeo serve para qualquer um. Este, não.</p>
+    </div>
+    <div class="vs rv">
+      <div class="vs__col">
+        <h3>Vídeo comum do Papai Noel</h3>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Cenário de estúdio que nunca foi a sua casa</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>"Oi, criança", e mais nada</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Frase pronta, igual para todo mundo</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Só um formato de tela</li>
+        </ul>
+      </div>
+      <div class="vs__col">
+        <h3>Papai Noel em Casa</h3>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7E3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Ele aparece no cantinho da foto que você mandar</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7E3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Chama seu filho pelo nome</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7E3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Fala da escola, da conquista do ano e do presente</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7E3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Na vertical para o celular ou na horizontal para a TV</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ctarow rv">
+      <a class="btn btn--gold" href="#pacotes">Escolher o meu pacote</a>
+      <small>Se não ficar mágico, a gente refaz</small>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="sec" id="como">
+  <div class="damask" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Três passos até a <em>noite mais mágica</em> do ano.</h2>
+      <p>Sem cadastro complicado e sem foto do seu filho.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg><svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg>
+        <div class="step__n">PASSO I</div>
+        <div class="step__ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+        <h3>Fotografe a sala</h3>
+        <p>Ou a árvore, a lareira, o quarto. Um cantinho da casa, sem ninguém na foto.</p>
+      </div>
+      <div class="step rv" style="--rd:.12s">
+        <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg><svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg>
+        <div class="step__n">PASSO II</div>
+        <div class="step__ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19l2-6 9-9 4 4-9 9z"/><path d="M14 6l4 4M5 19h14"/></svg></div>
+        <h3>Complete o recado</h3>
+        <p>O nome, a escola, o presente e a conquista do ano. O texto já vem pronto.</p>
+      </div>
+      <div class="step rv" style="--rd:.24s">
+        <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg><svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg>
+        <div class="step__n">PASSO III</div>
+        <div class="step__ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 9.5l4 2.5-4 2.5z"/></svg></div>
+        <h3>Receba no WhatsApp</h3>
+        <p>Em até 24 horas, pronto para mostrar no celular ou na TV da sala.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OS VÍDEOS -->
+<section class="sec sec--deep" id="surpresas">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Três visitas do Papai Noel <em>até a noite de Natal.</em></h2>
+      <p>Comece pelo recado. No pacote Noite de Natal, ele volta mais duas vezes, sempre com o nome do seu filho.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="arch"><div class="arch__in"><img src="img/card-recado.webp" alt="Papai Noel na poltrona ao lado da árvore, segurando um presente" loading="lazy"></div><span class="badge">Antes do Natal</span><button class="play js-video" type="button" data-video="recado"><i><svg width="10" height="10" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></i>Ver exemplo</button></div>
+        <h3>O recado</h3>
+        <p>Ele aparece no cantinho da sua casa, chama seu filho pelo nome, fala da escola, da conquista do ano e conta que o presente já está no trenó.</p>
+      </article>
+      <article class="card rv" style="--rd:.12s">
+        <div class="arch"><div class="arch__in"><img src="img/card-cartinha.webp" alt="Papai Noel sentado ao lado da árvore, segurando um presente verde" loading="lazy"></div><span class="badge">Resposta à cartinha</span></div>
+        <h3>Ele leu a cartinha</h3>
+        <p>O Papai Noel responde ao que seu filho pediu, item por item, e conta o que achou de cada pedido. Você manda o texto ou a foto da cartinha.</p>
+      </article>
+      <article class="card rv" style="--rd:.24s">
+        <div class="arch"><div class="arch__in"><img src="img/card-flagra.webp" alt="Imagem de câmera de segurança em visão noturna mostrando o Papai Noel na sala, com a data de 24 de dezembro" loading="lazy"></div><span class="badge">Na noite de Natal</span></div>
+        <h3>O flagra na sua sala</h3>
+        <p>Imagem de câmera de segurança: o Papai Noel na sua própria sala, na noite de Natal, deixando o presente e cochichando o nome do seu filho. Chega no dia 24.</p>
+      </article>
+    </div>
+    <p class="note rv">Na manhã de Natal, você mostra o flagra: a prova de que ele esteve aqui.</p>
+  </div>
+</section>
+
+<!-- PACOTES -->
+<section class="sec" id="pacotes">
+  <div class="damask" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Escolha o <em>Natal</em> do seu filho.</h2>
+      <p>Pagamento seguro pela Kiwify, no Pix ou no cartão. Logo depois, você manda a foto e completa o recado.</p>
+    </div>
+    <div class="plans plans--2">
+      <div class="plan rv">
+        <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg><svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg>
+        <div class="plan__name">O Recado</div>
+        <div class="plan__price"><small>R$</small><b>37</b><small>,90</small></div>
+        <p class="plan__lead">Uma visita do Papai Noel antes do Natal.</p>
+        <ul><li><b class="hl">Ele aparece no lugar da foto que você mandar:</b> na sala, no quarto, ao lado da árvore, onde você quiser</li><li>Chama seu filho pelo nome e fala da escola, da conquista do ano e do presente</li><li>Vertical para o celular ou horizontal para a TV</li><li>No seu WhatsApp em até 24 horas</li></ul>
+        <a class="btn btn--line" href="#pacotes" data-plan="p37" data-value="37.90">Quero o recado</a>
+      </div>
+      <div class="plan plan--best rv" style="--rd:.12s">
+        <span class="ribbon">O mais pedido</span>
+        <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg><svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/></svg>
+        <div class="plan__name glitter">Noite de Natal</div>
+        <div class="plan__price"><small>R$</small><b class="glitter">67</b><small>,90</small></div>
+        <p class="plan__was">3 vídeos do Papai Noel · <b>sai R$ 22,63 cada</b></p>
+        <p class="plan__lead">O recado, a resposta à cartinha e o flagra na noite de Natal.</p>
+        <div class="plan__pic"><img src="img/card-flagra.webp" alt="" loading="lazy" style="object-position:50% 22%"></div>
+        <ul><li><b class="hl">O recado:</b> o Papai Noel no lugar da foto que você mandar, chamando seu filho pelo nome</li><li><b class="hl">Ele leu a cartinha:</b> responde a cada pedido que seu filho fez</li><li><b class="hl">O flagra na sua sala:</b> imagem de câmera de segurança do Papai Noel deixando o presente, entregue no dia 24</li><li>Todos com o nome do seu filho, vertical ou horizontal</li></ul>
+        <a class="btn btn--gold" href="#pacotes" data-plan="p67" data-value="67.90">Quero a Noite de Natal</a>
+      </div>
+    </div>
+    <p class="bump rv"><b>Tem mais de um filho?</b> Na hora do pagamento, marque <b>"Mais uma criança" (+ R$ 19,90)</b> e o Papai Noel fala o nome dos dois.</p>
+    <p class="secure rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Compra protegida pela Kiwify · 7 dias de garantia · Refação sem custo</p>
+    <p class="deadline rv" style="text-align:center">Pedidos até 22/12 chegam antes do Natal</p>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="sec sec--deep" style="padding-top:90px;padding-bottom:90px">
+  <div class="wrap">
+    <div class="guar rv">
+      <svg class="corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/><circle cx="22" cy="22" r="3" fill="currentColor"/></svg>
+      <svg class="corner br" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 62V22C2 10 10 2 22 2h40"/><circle cx="22" cy="22" r="3" fill="currentColor"/></svg>
+      <div class="wax" aria-hidden="true"><b>GARANTIA</b><span>mágica</span></div>
+      <div>
+        <h2>Se não ficar mágico, <em>a gente refaz.</em></h2>
+        <p>Assistiu e algo não ficou do jeito que você imaginou? Fale com a gente no WhatsApp e refazemos o seu vídeo sem custo. E se mesmo assim não quiser, você tem 7 dias para pedir o dinheiro de volta. O risco fica com o Polo Norte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÚVIDAS -->
+<section class="sec" id="duvidas">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="orn orn--c">✦</div>
+      <h2>Perguntas de quem está <em>quase pedindo.</em></h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>Preciso mandar foto do meu filho?</summary><p>Não. Só a foto de um ambiente da casa. O Papai Noel fala com seu filho pelo nome, sem nenhuma imagem dele.</p></details>
+      <details><summary>Que foto eu mando?</summary><p>Do lugar onde você quer que o Papai Noel apareça: a sala, o quarto, ao lado da árvore, a fachada da casa, até a escola. Só precisa estar bem iluminada e sem pessoas aparecendo. Quanto mais a criança conhecer o lugar, maior o efeito.</p></details>
+      <details><summary>Em quanto tempo eu recebo?</summary><p>Em até 24 horas depois de mandar a foto e completar o recado, direto no seu WhatsApp.</p></details>
+      <details><summary>Como o vídeo é feito?</summary><p>Com inteligência artificial de vídeo e voz. Cada vídeo é conferido por uma pessoa antes do envio, para o nome e o recado chegarem certinhos.</p></details>
+      <details><summary>Dá para passar na TV?</summary><p>Sim. Escolha o formato horizontal e o vídeo fica perfeito na TV da sala.</p></details>
+      <details><summary>Até quando posso pedir?</summary><p>Pedidos feitos até 22 de dezembro chegam antes do Natal. O flagra da noite de Natal chega no dia 24. Quanto antes você pedir, mais tempo tem para guardar a surpresa.</p></details>
+      <details><summary>Tenho mais de um filho. Como faço?</summary><p>Na hora do pagamento, marque "Mais uma criança" (+ R$ 19,90) e o Papai Noel fala o nome dos dois irmãos no mesmo vídeo. Vale para todos os vídeos do pacote.</p></details>
+      <details><summary>Como eu recebo?</summary><p>Logo depois do pagamento abre um formulário rápido para você mandar a foto e completar o recado. O vídeo chega pronto no seu WhatsApp, para baixar e mostrar no celular ou na TV.</p></details>
+      <details><summary>É seguro pagar?</summary><p>Sim. O pagamento é feito pela Kiwify, no Pix ou no cartão. Os dados do seu cartão não passam por nós.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Fale com a gente pelo <a class="js-wa" href="#">WhatsApp</a> e refazemos o vídeo sem custo. E você ainda tem 7 dias de garantia: se quiser, devolvemos o seu dinheiro pela própria Kiwify.</p></details>
+      <details><summary>O que vocês fazem com a foto e os nomes?</summary><p>Usamos só para criar o seu vídeo. Não pedimos foto de criança, não divulgamos nada sem a sua autorização e apagamos os arquivos depois da entrega. Veja a <a href="privacidade.html">política de privacidade</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="final__img"><img src="img/hero-alt.webp" alt="" loading="lazy"></div>
+  <canvas class="snow" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="orn orn--c rv">✦</div>
+    <h2 class="glitter rv">A noite de Natal está chegando.</h2>
+    <p class="final__sub rv">Garanta o vídeo agora e guarde a surpresa para a hora certa.</p>
+    <div class="count rv" role="timer" aria-label="Contagem regressiva para o Natal">
+      <div><b data-d>00</b><span>dias</span></div><div><b data-h>00</b><span>horas</span></div><div><b data-m>00</b><span>min</span></div><div><b data-s>00</b><span>seg</span></div>
+    </div>
+    <a class="btn btn--gold rv" href="#pacotes">Garantir o vídeo do meu filho</a>
+    <p class="sign rv">Com carinho, Papai Noel</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <b>Papai Noel em Casa</b>
+  Instagram e TikTok: @papainoel.emcasa<br>
+  <span class="js-wa-num"></span>
+  Vídeos criados com inteligência artificial e conferidos um a um. © 2026<br>
+  <a href="termos.html" style="color:inherit">Termos de uso</a> · <a href="privacidade.html" style="color:inherit">Política de privacidade</a>
+</footer>
+
+<div class="dock"><a class="btn btn--gold" href="#pacotes">Quero esse momento</a></div>
+
+<a class="wa js-wa" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.1 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.6-8.3z"/></svg></a>
+
+<div class="vmodal" role="dialog" aria-modal="true" aria-label="Vídeo de exemplo">
+  <button class="vmodal__x" type="button" aria-label="Fechar">×</button>
+  <div class="vmodal__box">
+    <video playsinline controls preload="none"></video>
+    <div class="vmodal__soon"><b>Exemplo chegando do Polo Norte</b><span>Este vídeo de exemplo está sendo preparado.</span></div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   CONFIGURAÇÃO: preencha só aqui
+   ===================================================================== */
+var CONFIG = {
+  kiwify: {
+    p37: '',   // link do checkout O Recado, R$ 37,90 (ex.: 'https://pay.kiwify.com.br/XXXX')
+    p67: ''    // link do checkout Noite de Natal, R$ 67,90
+  },
+  whatsapp: '',  // só números, com DDI e DDD (ex.: '5511999999999')
+  whatsappMsg: 'Oi! Quero saber mais sobre o vídeo do Papai Noel em Casa.',
+  pixel: '',     // ID do Pixel da Meta (ex.: '123456789012345')
+  videos: {      // arquivos de exemplo (vertical, .mp4)
+    recado: 'videos/recado.mp4',
+    reacao: 'videos/reacao.mp4'
+  },
+  posters: { recado:'img/poster-recado.jpg', reacao:'img/cena.webp' }
+};
+
+/* Pixel da Meta (só carrega se o ID estiver preenchido) */
+(function(){
+  if(!CONFIG.pixel) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',CONFIG.pixel);fbq('track','PageView');
+})();
+function track(ev,data){try{if(window.fbq)fbq('track',ev,data||{})}catch(e){}}
+
+/* Links da Kiwify, levando junto as UTMs do anúncio */
+(function(){
+  var qs=location.search.replace(/^\?/,'');
+  document.querySelectorAll('[data-plan]').forEach(function(a){
+    var url=CONFIG.kiwify[a.dataset.plan];
+    if(url){a.href=url+(qs?(url.indexOf('?')>-1?'&':'?')+qs:'');}
+    a.addEventListener('click',function(){track('InitiateCheckout',{value:+a.dataset.value,currency:'BRL'})});
+  });
+})();
+
+/* WhatsApp */
+(function(){
+  var n=CONFIG.whatsapp.replace(/\D/g,''),url=n?'https://wa.me/'+n+'?text='+encodeURIComponent(CONFIG.whatsappMsg):'#';
+  if(!n){var f=document.querySelector('a.wa');if(f)f.hidden=true;}
+  document.querySelectorAll('.js-wa').forEach(function(a){a.href=url;if(n){a.target='_blank';a.rel='noopener'}a.addEventListener('click',function(){track('Contact')})});
+  var t=document.querySelector('.js-wa-num');
+  if(t&&n){t.textContent='WhatsApp: +'+n.slice(0,2)+' ('+n.slice(2,4)+') '+n.slice(4,-4)+'-'+n.slice(-4);t.insertAdjacentHTML('afterend','<br>')}
+})();
+
+/* Janela de vídeo */
+(function(){
+  var m=document.querySelector('.vmodal'),v=m.querySelector('video'),soon=m.querySelector('.vmodal__soon'),last;
+  function open(k){
+    last=document.activeElement;
+    m.classList.remove('err');
+    soon.style.setProperty('--poster','url('+CONFIG.posters[k]+')');
+    v.poster=CONFIG.posters[k];
+    v.src=CONFIG.videos[k];
+    m.classList.add('on');document.body.style.overflow='hidden';
+    var pr=v.play();if(pr&&pr.catch)pr.catch(function(){});
+    m.querySelector('.vmodal__x').focus();
+    track('ViewContent',{content_name:k});
+  }
+  function close(){m.classList.remove('on');document.body.style.overflow='';v.pause();v.removeAttribute('src');v.load();if(last)last.focus()}
+  v.addEventListener('error',function(){if(v.getAttribute('src'))m.classList.add('err')});
+  document.querySelectorAll('.js-video').forEach(function(b){
+    b.addEventListener('click',function(){open(b.dataset.video)});
+    b.addEventListener('keydown',function(e){if(e.key==='Enter'&&b.tagName!=='BUTTON')open(b.dataset.video)});
+  });
+  m.querySelector('.vmodal__x').addEventListener('click',close);
+  m.addEventListener('click',function(e){if(e.target===m)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('on'))close()});
+})();
+
+/* Neve em camadas (topo e final) */
+document.querySelectorAll('canvas.snow').forEach(function(c){
+  if(!c.getContext) return;
+  var x=c.getContext('2d'),d=Math.min(2,window.devicePixelRatio||1),W,H,F=[];
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var sp=document.createElement('canvas');sp.width=sp.height=64;
+  var g=sp.getContext('2d'),r=g.createRadialGradient(32,32,0,32,32,32);
+  r.addColorStop(0,'rgba(255,255,255,1)');r.addColorStop(.4,'rgba(255,255,255,.8)');r.addColorStop(1,'rgba(255,255,255,0)');
+  g.fillStyle=r;g.fillRect(0,0,64,64);
+  function rs(){W=c.clientWidth;H=c.clientHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);F=[];
+    var n=rm?40:Math.round(Math.min(200,W<700?W/7:W/5));
+    for(var i=0;i<n;i++){var z=Math.random(),near=z>.93;F.push({x:Math.random()*W,y:Math.random()*H,r:near?8+Math.random()*9:.8+z*3,v:near?1.3+Math.random():.3+z*1.1,a:near?.25:.35+z*.55,p:Math.random()*6.3,s:.3+z*.6})}}
+  rs();window.addEventListener('resize',rs);
+  var vis=true;if(window.IntersectionObserver)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(c);
+  (function L(){if(vis){x.clearRect(0,0,W,H);for(var i=0;i<F.length;i++){var f=F[i];f.p+=.01;f.x+=Math.sin(f.p)*f.s+.25;f.y+=rm?f.v*.3:f.v;if(f.y>H+20){f.y=-20;f.x=Math.random()*W}if(f.x>W+20)f.x=-20;x.globalAlpha=f.a;x.drawImage(sp,f.x-f.r,f.y-f.r,f.r*2,f.r*2)}}requestAnimationFrame(L)})();
+});
+
+/* Aparecer ao chegar */
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!window.IntersectionObserver){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+/* Recado de exemplo trocando de criança */
+(function(){
+  var K=[
+    {n:'Miguel',p:'o papai Rafael',e:'Pequeno Príncipe',c:'aprendeu a ler sozinho',g:'bicicleta vermelha'},
+    {n:'Alice',p:'a vovó Lúcia',e:'Santa Maria',c:'perdeu o medo do escuro',g:'casinha de bonecas'},
+    {n:'Theo',p:'a mamãe Carol',e:'Arco-Íris',c:'ajudou a cuidar da irmãzinha',g:'pista de carrinhos'}
+  ];
+  var fs=document.querySelectorAll('.letter .f'),dots=document.querySelectorAll('.dots i'),i=0;
+  if(!fs.length||window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  setInterval(function(){
+    i=(i+1)%K.length;
+    fs.forEach(function(f,j){setTimeout(function(){f.classList.add('sw');setTimeout(function(){
+      f.textContent=K[i][f.dataset.k];f.classList.remove('sw')},450)},j*140)});
+    dots.forEach(function(d,j){d.classList.remove('on');void d.offsetWidth;if(j===i)d.classList.add('on')});
+  },4000);
+})();
+
+/* Botão fixo no celular depois do topo */
+(function(){var d=document.querySelector('.dock'),c=document.querySelector('.hero__ctas');if(!d||!c||!window.IntersectionObserver)return;new IntersectionObserver(function(e){var on=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;d.classList.toggle('on',on);document.body.classList.toggle('dock-on',on)}).observe(c)})();
+
+/* Brilho seguindo o mouse */
+(function(){
+  if(!window.matchMedia('(pointer:fine)').matches||window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var last=0;
+  window.addEventListener('pointermove',function(e){
+    var t=performance.now();if(t-last<45)return;last=t;
+    var s=document.createElement('span');s.className='spk';
+    s.style.left=(e.clientX-5)+'px';s.style.top=(e.clientY-5)+'px';
+    s.style.setProperty('--x',(Math.random()*40-20)+'px');s.style.setProperty('--y',(Math.random()*30+10)+'px');
+    s.innerHTML='<svg><use href="#star"/></svg>';document.body.appendChild(s);
+    setTimeout(function(){s.remove()},900);
+  },{passive:true});
+})();
+
+/* Contagem regressiva */
+(function(){
+  var t=new Date(2026,11,25,0,0,0).getTime(),p=function(n){return(n<10?'0':'')+n};
+  var el={d:document.querySelector('[data-d]'),h:document.querySelector('[data-h]'),m:document.querySelector('[data-m]'),s:document.querySelector('[data-s]')};
+  function set(k,v){if(el[k].textContent!==v){el[k].textContent=v;el[k].classList.remove('tick');void el[k].offsetWidth;el[k].classList.add('tick')}}
+  function tick(){var v=Math.max(0,t-Date.now());set('d',p(Math.floor(v/864e5)));set('h',p(Math.floor(v/36e5)%24));set('m',p(Math.floor(v/6e4)%60));set('s',p(Math.floor(v/1e3)%60))}
+  tick();setInterval(tick,1000);
+})();
+</script>
+
+</body></html>
