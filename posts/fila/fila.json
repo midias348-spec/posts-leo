@@ -9,7 +9,7 @@
       "legenda": null,
       "capa": null,
       "data": null,
-      "status": "preparado"
+      "status": "postado (pelo app, 22/11 - confirmar)"
     },
     {
       "id": 2,
@@ -17,9 +17,10 @@
       "titulo": "O carrossel que não acaba",
       "cta": "CANVA",
       "legenda": null,
-      "capa": null,
-      "data": null,
-      "status": "preparado"
+      "capa": "capa-carrossel.jpg",
+      "data": "2026-11-23",
+      "status": "postado",
+      "media_id": "18074130218507694"
     },
     {
       "id": 3,
