@@ -52,6 +52,17 @@
       "data": "2026-11-19T19:00-03:00",
       "status": "postado",
       "media_id": "17879064528636443"
+    },
+    {
+      "id": 6,
+      "arquivo": "../ig-pedro-caio-ep7.mp4",
+      "titulo": "Caio x Pedro ep. 7 — Um baixou o preço. O outro faturou.",
+      "cta": "VALOR",
+      "legenda": null,
+      "capa": "../ig-pedro-caio-ep7-capa.jpg",
+      "data": "2026-11-24",
+      "status": "postado",
+      "media_id": "17960141310290619"
     }
   ]
 }
