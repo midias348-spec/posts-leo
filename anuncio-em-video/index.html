@@ -138,6 +138,28 @@ footer{color:var(--cinza);font-size:13.5px;padding-block:0 40px}
 .imv .ac button.perigo{color:#B3261E}
 .linha-acoes{display:flex;gap:10px;flex-wrap:wrap}
 .btn-cl{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:12px;border:1.5px solid var(--linha);background:#fff;font-weight:700;font-size:14.5px;color:var(--tinta)}
+.n-lista{display:grid;gap:10px}
+.n-item{border:1px solid var(--linha);border-radius:16px;padding:12px;display:grid;gap:8px;background:var(--campo)}
+.n-item.feita{background:#F0F7F2;border-color:#BFE3CF}
+.n-cab{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.n-cab b{font-size:14.5px}
+.n-st{font-size:12.5px;color:var(--cinza)}.n-st.ok{color:var(--verde);font-weight:700}.n-st.aviso{color:#A15C00;font-weight:600}
+textarea{width:100%;border:1.5px solid var(--linha);border-radius:12px;padding:10px 12px;font:15px/1.45 var(--f);background:#fff;color:var(--tinta);resize:vertical;min-width:0}
+textarea:focus{border-color:var(--verde);outline:none}
+.check{display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--verde);padding:0;flex:0 0 auto}
+.n-arq{position:relative;cursor:pointer}.n-arq input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.marca-cor{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-top:10px}
+.cor-livre{display:flex;align-items:center;gap:8px;font-size:13.5px}
+.cor-livre input{width:44px;height:36px;padding:2px;border-radius:10px;cursor:pointer}
+.tel{position:fixed;inset:0;z-index:100;background:rgba(6,20,15,.94);display:grid;place-items:center;padding:max(20px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.tel-box{width:min(640px,100%);display:grid;gap:18px;text-align:center;color:#fff}
+.tel-parte{font:700 13px var(--f);letter-spacing:.08em;text-transform:uppercase;color:#7FD8AE}
+.tel-texto{font:700 clamp(26px,6vw,40px)/1.3 var(--disp);margin:0;text-wrap:balance}
+.tel-cont{font:800 64px var(--disp);color:var(--sol)}
+.tel-nivel{height:8px;border-radius:8px;background:rgba(255,255,255,.15);overflow:hidden}.tel-nivel i{display:block;height:100%;width:2%;background:#2BD47D;transition:width .08s}
+.tel-estado{margin:0;font-weight:700;color:#CFE9DC}
+.tel-acoes{display:flex;gap:16px;justify-content:center;align-items:center}.tel .link{color:#CFE9DC}.tel .dica{color:#9FB8AC}
 .btn-cl.escuro{background:var(--tinta);color:#fff;border-color:var(--tinta)}
 /* mais formatos */
 .abas{display:flex;gap:6px;background:var(--campo);border:1px solid var(--linha);border-radius:12px;padding:4px}
@@ -157,7 +179,6 @@ textarea:focus{border-color:var(--verde);outline:none;background:#fff}
 @media (max-width:959px){.previa{position:static}.criador{padding-bottom:90px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-</head><body>
 
 <header class="topo">
   <div class="wrap">
@@ -229,15 +250,33 @@ textarea:focus{border-color:var(--verde);outline:none;background:#fff}
           <label>Contato<input id="contato" value="(11) 90000-0000"></label>
         </div>
         <div>
-          <div class="rotulo">Cor de destaque</div>
+          <div class="rotulo">Cor da marca</div>
           <div class="cores" id="cores"></div>
+          <div class="marca-cor">
+            <label class="cor-livre">Outra cor<input type="color" id="corLivre" value="#0E7A55"></label>
+            <button class="btn-cl" type="button" id="corDoLogo" hidden>Usar a cor do logo</button>
+            <label class="check"><input type="checkbox" id="corFixa"> Usar sempre esta cor, em todos os estilos</label>
+          </div>
         </div>
       </div>
+      <div class="painel" id="narracao">
+        <h3><i>4</i>Narração com a sua voz</h3>
+        <p class="dica">O texto de cada parte sai da ficha e você pode mudar. Grave uma parte por vez: a voz fica limpa, sem ruído de fundo e sem pausas longas, e entra na cena certa com legenda e a música abaixando.</p>
+        <label class="check"><input type="checkbox" id="narrAtivo"> Colocar minha voz no vídeo</label>
+        <div class="n-lista" id="narrLista"></div>
+        <div class="linha-acoes">
+          <label class="btn-cl n-arq">Enviar um áudio pronto<input type="file" id="narrArq" accept="audio/*,.m4a,.mp3,.ogg,.opus,.wav,.aac"></label>
+          <button class="btn-cl" type="button" id="narrOuvirTudo" hidden>Ouvir a narração inteira</button>
+          <button class="link" type="button" id="narrRefaz">Refazer os textos pela ficha</button>
+        </div>
+        <label class="check"><input type="checkbox" id="narrLegenda" checked> Legenda da voz na tela</label>
+        <p class="ok-msg" id="narrMsg" aria-live="polite"></p>
+      </div>
       <div class="painel" id="formatos">
-        <h3><i>4</i>Mais formatos</h3>
+        <h3><i>5</i>Mais formatos</h3>
         <p class="dica">Com a mesma ficha e as mesmas fotos: capa para o Reels, carrossel de 5 imagens para o feed e a legenda do post.</p>
         <div class="abas" role="tablist">
-          <button type="button" role="tab" aria-selected="true" data-aba="capa">Capa</button>
+          <button type="button" role="tab" aria-selected="true" data-aba="capa">Capa do Reels</button>
           <button type="button" role="tab" aria-selected="false" data-aba="carrossel">Carrossel</button>
           <button type="button" role="tab" aria-selected="false" data-aba="legenda">Legenda</button>
         </div>
@@ -291,6 +330,17 @@ textarea:focus{border-color:var(--verde);outline:none;background:#fff}
   <footer>Anúncio em Vídeo é um produto da Zip Mídias.</footer>
 </main>
 
+<div class="tel" id="teleprompter" hidden role="dialog" aria-modal="true" aria-label="Gravando a narração">
+  <div class="tel-box">
+    <span class="tel-parte" id="telParte"></span>
+    <p class="tel-texto" id="telTexto"></p>
+    <div class="tel-cont" id="telCont">3</div>
+    <div class="tel-nivel" id="telNivel"><i></i></div>
+    <p class="tel-estado" id="telEstado">Prepare-se</p>
+    <div class="tel-acoes"><button class="btn btn-pri" type="button" id="telPronto">Pronto</button><button class="link" type="button" id="telCancelar">Cancelar</button></div>
+    <p class="dica">Fale em tom de conversa, perto do celular. A gravação para sozinha quando você terminar.</p>
+  </div>
+</div>
 <div class="ir" id="ir"><a href="#previa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Ver prévia e gerar vídeo</a></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -850,7 +900,7 @@ const SFX={
   fim:()=>{}
 };
 function mestre(ac,dest,T,vol=.65){const comp=ac.createDynamicsCompressor();comp.threshold.value=-16;comp.ratio.value=6;const lim=ac.createGain();lim.gain.value=.78;comp.connect(lim);lim.connect(dest);
-  const m=ac.createGain();m.connect(comp);const t0=ac.currentTime+.05;m.gain.setValueAtTime(0,t0);m.gain.linearRampToValueAtTime(vol,t0+.3);m.gain.setValueAtTime(vol,t0+T-1.2);m.gain.linearRampToValueAtTime(0,t0+T);
+  const m=ac.createGain();const duck=ac.createGain();m.connect(duck);duck.connect(comp);const t0=ac.currentTime+.05;window.__mix={duck,t0};m.gain.setValueAtTime(0,t0);m.gain.linearRampToValueAtTime(vol,t0+.3);m.gain.setValueAtTime(vol,t0+T-1.2);m.gain.linearRampToValueAtTime(0,t0+T);
   const fx=ac.createGain();fx.gain.value=.9;fx.connect(comp);return {m,fx,t0}}
 function tocaEfeitos(ac,fx,t0,cues){(cues||[]).forEach(c=>{const s=SFX[c.s];if(s)try{s(ac,fx,t0+c.t)}catch(e){}})}
 const MUSICA={
@@ -1023,6 +1073,211 @@ const EX_FOTOS=[['1-fachada','Fachada'],['2-sala','Sala integrada'],['3-cozinha'
 const SPECS0=[['68 m²','área útil'],['2','dormitórios'],['1','suíte'],['1','vaga']];
 let CUR={estilo:'luxo',cor:ESTILOS.luxo.cor,cuts:[]};
 let fotos=[]; // {src,nome,img}
+/* ===================== NARRAÇÃO COM A VOZ DO CORRETOR ===================== */
+/* Roteiro por cena · gravação frase a frase · limpeza da voz · sincronia · legenda */
+const NARR={ativo:false,legenda:true,clips:[null,null,null,null],textos:['','','',''],editado:[false,false,false,false],sr:48000};
+const CENAS={ /* [início, fim] de cada parte, em segundos, igual à linha do tempo de cada estilo */
+  luxo:[[0,3.6],[3.6,21],[21,25.4],[25.4,30]],
+  achadinho:[[0,3],[3,20.5],[20.5,25],[25,30]],
+  trailer:[[0,4],[4,21],[21,25.5],[25.5,30]],
+  vendido:[[0,6],[6,20],[20,25],[25,30]],
+  baixou:[[0,5.2],[5.2,20.5],[20.5,25],[25,30]]
+};
+const PARTES=['Abertura','Ambientes','Preço e ficha','Chamada final'];
+
+/* ---------- roteiro automático a partir da ficha ---------- */
+function listaPt(a){a=a.filter(Boolean);if(a.length<2)return a[0]||'';return a.slice(0,-1).join(', ')+' e '+a[a.length-1]}
+function specsFala(f){return listaPt((f.specs||[]).map(([v,l])=>(v+' '+(l||'')).trim()))}
+function roteiro(estilo,f){
+  const alug=/alug/i.test(f.status||''),tipo=(f.titulo_1||'imóvel').trim(),tipoMin=tipo.charAt(0).toLowerCase()+tipo.slice(1);
+  const dest=(f.titulo_2||'').trim(),bairro=(f.bairro||'').trim(),sp=specsFala(f),preco=(f.preco||'').trim(),cta=(f.cta||'').trim().replace(/[.!]+$/,'');
+  const emB=bairro?` em ${bairro}`:'',contato=(f.contato||'').trim();
+  const fecho=[cta?cta+'.':'',contato?`Me chama: ${contato}.`:''].filter(Boolean).join(' ');
+  const R={
+    luxo:[`Conheça este ${tipoMin}${dest?' '+dest:''}${emB}.`,sp?`São ${sp}, com cada ambiente pensado para o seu dia a dia.`:`Cada ambiente pensado para o seu dia a dia.`,preco?(alug?`Aluguel de ${preco}.`:`Por ${preco}.`):'',fecho],
+    achadinho:[`Achado${emB}!`,`${tipo}${(f.destaques||'').trim()?', '+listaPt(f.destaques.split(',').map(s=>s.trim().toLowerCase())):''}.`,preco?(alug?`Aluguel de ${preco}.`:`Por apenas ${preco}.`):'',fecho||'Chama no WhatsApp!'],
+    trailer:[`Em breve${emB}.`,`${tipo}${dest?' '+dest:''}${sp?'. '+sp.charAt(0).toUpperCase()+sp.slice(1):''}.`,[(f.data||'').trim()?`Lançamento em ${f.data.trim()}`:'',preco?`a partir de ${preco}`:''].filter(Boolean).join(', ')+'.',fecho],
+    vendido:[alug?'Mais um imóvel alugado!':'Mais um imóvel vendido!',`${tipo}${emB}.`,'Obrigado pela confiança.',fecho||`Fale com ${f.imobiliaria||'a gente'}.`],
+    baixou:[`Baixou o preço!${(f.preco_antigo||'').trim()&&preco?` De ${f.preco_antigo.trim()} por ${preco}.`:''}`,`${tipo}${emB}${sp?', com '+sp:''}.`,preco?`Agora por ${preco}.`:'',fecho]
+  };
+  return (R[estilo]||R.luxo).map(s=>s.replace(/\s+/g,' ').replace(/^\.\s*/,'').trim());
+}
+
+/* ---------- utilidades de áudio ---------- */
+function ctxAudio(){if(!NARR.ac){const A=window.AudioContext||window.webkitAudioContext;NARR.ac=new A();NARR.sr=NARR.ac.sampleRate}return NARR.ac}
+function paraMono(buf){const n=buf.length,o=new Float32Array(n);for(let c=0;c<buf.numberOfChannels;c++){const d=buf.getChannelData(c);for(let i=0;i<n;i++)o[i]+=d[i]/buf.numberOfChannels}return o}
+async function reamostra(data,srIn,srOut){if(srIn===srOut)return data;const OC=window.OfflineAudioContext||window.webkitOfflineAudioContext;
+  const oc=new OC(1,Math.ceil(data.length*srOut/srIn),srOut);const b=oc.createBuffer(1,data.length,srIn);b.getChannelData(0).set(data);const s=oc.createBufferSource();s.buffer=b;s.connect(oc.destination);s.start();return (await oc.startRendering()).getChannelData(0)}
+async function filtra(data,sr,cadeia){const OC=window.OfflineAudioContext||window.webkitOfflineAudioContext;const oc=new OC(1,data.length,sr);const b=oc.createBuffer(1,data.length,sr);b.getChannelData(0).set(data);
+  const s=oc.createBufferSource();s.buffer=b;let no=s;cadeia(oc).forEach(n=>{no.connect(n);no=n});no.connect(oc.destination);s.start();return (await oc.startRendering()).getChannelData(0)}
+
+/* FFT radix-2 in-place */
+function fft(re,im,inv){const n=re.length;for(let i=1,j=0;i<n;i++){let b=n>>1;for(;j&b;b>>=1)j^=b;j^=b;if(i<j){[re[i],re[j]]=[re[j],re[i]];[im[i],im[j]]=[im[j],im[i]]}}
+  for(let len=2;len<=n;len<<=1){const a=(inv?2:-2)*Math.PI/len,wr=Math.cos(a),wi=Math.sin(a);for(let i=0;i<n;i+=len){let cr=1,ci=0;for(let j=0;j<len/2;j++){const k=i+j,l=k+len/2,tr=re[l]*cr-im[l]*ci,ti=re[l]*ci+im[l]*cr;re[l]=re[k]-tr;im[l]=im[k]-ti;re[k]+=tr;im[k]+=ti;const t=cr*wr-ci*wi;ci=cr*wi+ci*wr;cr=t}}}
+  if(inv)for(let i=0;i<n;i++){re[i]/=n;im[i]/=n}}
+
+/* redução de ruído por subtração espectral (perfil tirado dos trechos mais silenciosos) */
+function tiraRuido(x,forca=1.7){const N=1024,H=256,win=new Float32Array(N);for(let i=0;i<N;i++)win[i]=.5-.5*Math.cos(2*Math.PI*i/N);
+  const nf=Math.max(1,Math.floor((x.length-N)/H)+1),B=N/2+1,mags=[],fases=[],en=new Float32Array(nf);
+  const re=new Float32Array(N),im=new Float32Array(N);
+  for(let f=0;f<nf;f++){re.fill(0);im.fill(0);for(let i=0;i<N;i++){const v=x[f*H+i]||0;re[i]=v*win[i]}fft(re,im,false);
+    const m=new Float32Array(B),p=new Float32Array(B);let e=0;for(let k=0;k<B;k++){m[k]=Math.hypot(re[k],im[k]);p[k]=Math.atan2(im[k],re[k]);e+=m[k]*m[k]}mags.push(m);fases.push(p);en[f]=e}
+  const ord=[...en.keys()].sort((a,b)=>en[a]-en[b]),q=Math.max(3,Math.floor(nf*.12)),ruido=new Float32Array(B);
+  for(let i=0;i<q;i++){const m=mags[ord[i]];for(let k=0;k<B;k++)ruido[k]+=m[k]/q}
+  const out=new Float32Array(x.length+N),soma=new Float32Array(x.length+N),gPrev=new Float32Array(B).fill(1);
+  for(let f=0;f<nf;f++){const m=mags[f],p=fases[f],g=new Float32Array(B);
+    for(let k=0;k<B;k++){let v=1-forca*ruido[k]/(m[k]+1e-9);v=Math.max(.08,Math.min(1,v));g[k]=v}
+    for(let k=1;k<B-1;k++)g[k]=(g[k-1]+2*g[k]+g[k+1])/4; /* suaviza na frequência */
+    for(let k=0;k<B;k++){const a=g[k]>gPrev[k]?.7:.25;g[k]=gPrev[k]+(g[k]-gPrev[k])*a;gPrev[k]=g[k]} /* suaviza no tempo */
+    re.fill(0);im.fill(0);for(let k=0;k<B;k++){const r=m[k]*g[k];re[k]=r*Math.cos(p[k]);im[k]=r*Math.sin(p[k]);if(k>0&&k<N/2){re[N-k]=re[k];im[N-k]=-im[k]}}
+    fft(re,im,true);for(let i=0;i<N;i++){out[f*H+i]+=re[i]*win[i];soma[f*H+i]+=win[i]*win[i]}}
+  const y=new Float32Array(x.length);for(let i=0;i<x.length;i++)y[i]=soma[i]>1e-6?out[i]/soma[i]:0;return y}
+
+/* trechos com fala (detector de voz por energia) */
+function trechosDeFala(x,sr){const J=Math.round(sr*.02),n=Math.floor(x.length/J),db=new Float32Array(n);
+  for(let i=0;i<n;i++){let s=0;for(let j=0;j<J;j++){const v=x[i*J+j];s+=v*v}db[i]=10*Math.log10(s/J+1e-12)}
+  const ord=[...db].sort((a,b)=>a-b),piso=ord[Math.floor(n*.1)]||-90,topo=ord[Math.floor(n*.95)]||-20;
+  const lim=Math.max(piso+10,Math.min(topo-26,piso+(topo-piso)*.33));
+  const on=new Uint8Array(n);for(let i=0;i<n;i++)on[i]=db[i]>lim?1:0;
+  /* tapa buracos de até 120 ms e remove estalos de até 60 ms */
+  for(let i=0;i<n;){if(!on[i]){let k=i;while(k<n&&!on[k])k++;if(i>0&&k<n&&k-i<=6)for(let z=i;z<k;z++)on[z]=1;i=k}else i++}
+  for(let i=0;i<n;){if(on[i]){let k=i;while(k<n&&on[k])k++;if(k-i<=3)for(let z=i;z<k;z++)on[z]=0;i=k}else i++}
+  const seg=[];for(let i=0;i<n;){if(on[i]){let k=i;while(k<n&&on[k])k++;seg.push([i*J,k*J]);i=k}else i++}return seg}
+
+/* corta silêncio do começo e do fim e encurta pausas longas: a fala fica mais fluida */
+function enxuga(x,sr,pausaMax=.24){const seg=trechosDeFala(x,sr);if(!seg.length)return {y:x,falas:[[0,x.length/sr]]};
+  const pad=Math.round(sr*.07),fade=Math.round(sr*.012),partes=[],falas=[];let pos=0;
+  seg.forEach(([a,b],i)=>{let ini=Math.max(0,a-pad),fim=Math.min(x.length,b+pad);
+    if(i>0){const gapAnt=a-seg[i-1][1];const manter=Math.min(gapAnt,Math.round(sr*pausaMax));ini=Math.max(ini,a-Math.round(manter/2))}
+    if(i<seg.length-1){const gap=seg[i+1][0]-b;const manter=Math.min(gap,Math.round(sr*pausaMax));fim=Math.min(fim,b+Math.round(manter/2))}
+    partes.push(x.subarray(ini,fim));falas.push([(pos+(a-ini))/sr,(pos+(b-ini))/sr]);pos+=fim-ini});
+  const y=new Float32Array(pos);let o=0;partes.forEach(p=>{const c=new Float32Array(p);for(let i=0;i<fade&&i<c.length;i++){c[i]*=i/fade;c[c.length-1-i]*=i/fade}y.set(c,o);o+=c.length});
+  return {y,falas}}
+
+function normaliza(x){let pico=0,s=0;for(const v of x){const a=Math.abs(v);if(a>pico)pico=a;s+=v*v}const rms=Math.sqrt(s/x.length)||1e-6;
+  const g=Math.min(.89/(pico||1),.16/rms);const y=new Float32Array(x.length);for(let i=0;i<x.length;i++){let v=x[i]*g;y[i]=Math.tanh(v*1.15)/Math.tanh(1.15)}return y}
+
+/* pipeline completo: mono → filtros → tira ruído → enxuga → compressor/EQ → volume */
+async function trataVoz(buf){const sr=NARR.sr;let x=await reamostra(paraMono(buf),buf.sampleRate,sr);
+  x=await filtra(x,sr,oc=>{const hp=oc.createBiquadFilter();hp.type='highpass';hp.frequency.value=85;hp.Q.value=.7;const lp=oc.createBiquadFilter();lp.type='lowpass';lp.frequency.value=11000;return [hp,lp]});
+  x=tiraRuido(x);
+  const {y,falas}=enxuga(x,sr);
+  let z=await filtra(y,sr,oc=>{const lo=oc.createBiquadFilter();lo.type='lowshelf';lo.frequency.value=180;lo.gain.value=-1.5;
+    const pr=oc.createBiquadFilter();pr.type='peaking';pr.frequency.value=3200;pr.Q.value=.9;pr.gain.value=3;
+    const ar=oc.createBiquadFilter();ar.type='highshelf';ar.frequency.value=9000;ar.gain.value=1.5;
+    const c=oc.createDynamicsCompressor();c.threshold.value=-26;c.knee.value=8;c.ratio.value=3.5;c.attack.value=.004;c.release.value=.14;return [lo,pr,ar,c]});
+  z=normaliza(z);return {data:z,dur:z.length/sr,falas}}
+
+/* ---------- tempo de cada palavra (para a legenda) ---------- */
+function tempoPalavras(texto,falas,dur){const ws=texto.replace(/\s+/g,' ').trim().split(' ').filter(Boolean);if(!ws.length)return [];
+  const fl=falas&&falas.length?falas:[[0,dur]];const totFala=fl.reduce((s,[a,b])=>s+(b-a),0)||dur;
+  const peso=w=>w.replace(/[^\p{L}\p{N}]/gu,'').length+1.5,totP=ws.reduce((s,w)=>s+peso(w),0);
+  /* distribui as palavras pelos trechos de fala, proporcional ao tamanho de cada trecho */
+  const out=[];let wi=0,acumP=0;
+  fl.forEach(([a,b],si)=>{const cota=(b-a)/totFala*totP,ultimo=si===fl.length-1;let usado=0;const grupo=[];
+    while(wi<ws.length&&(ultimo||usado+peso(ws[wi])/2<=cota||!grupo.length)){grupo.push(ws[wi]);usado+=peso(ws[wi]);wi++;if(!ultimo&&usado>=cota)break}
+    const gp=grupo.reduce((s,w)=>s+peso(w),0)||1;let t=a;grupo.forEach(w=>{const d=(b-a)*peso(w)/gp;out.push({w,a:t,b:t+d});t+=d});acumP+=usado});
+  while(wi<ws.length){const l=out.length?out[out.length-1].b:0;out.push({w:ws[wi++],a:l,b:l+.2})}return out}
+
+/* ---------- linha do tempo: onde cada frase entra no vídeo ---------- */
+function agenda(estilo,total=30){const cenas=CENAS[estilo]||CENAS.luxo,res=[];let fimAnt=0;
+  NARR.clips.forEach((c,i)=>{if(!c)return;const [a,b]=cenas[i];let ini=Math.max(a+(i===0?.35:.25),fimAnt+.2);
+    const folga=b-ini;if(c.dur<folga-.4&&i!==0)ini=Math.max(ini,Math.min(a+.6,b-c.dur-.3));
+    if(ini+c.dur>total-.25)ini=Math.max(fimAnt+.1,total-.25-c.dur);res.push({i,ini,fim:ini+c.dur,clip:c});fimAnt=ini+c.dur});return res}
+
+/* ---------- legenda na tela ---------- */
+function blocosLegenda(pal){const bl=[];let cur=[];pal.forEach(p=>{cur.push(p);const txt=cur.map(x=>x.w).join(' ');if(cur.length>=5||txt.length>=24||/[.!?,:]$/.test(p.w)){bl.push(cur);cur=[]}});if(cur.length)bl.push(cur);return bl}
+function desenhaLegenda(ctx,t,ag,cor){
+  for(const s of ag){if(s.i!==1)continue; /* só na parte dos ambientes: abertura, preço e final já têm o texto grande na tela */
+    if(t<s.ini-.05||t>s.fim+.35)continue;const lt=t-s.ini,pal=s.clip.pal||[];if(!pal.length)return;
+    const bl=s.clip.blocos||(s.clip.blocos=blocosLegenda(pal));let blo=bl.find(b=>lt>=b[0].a-.08&&lt<=b[b.length-1].b+.25);if(!blo)blo=lt<bl[0][0].a?null:bl.find((b,k)=>lt<(bl[k+1]?bl[k+1][0].a:1e9));if(!blo)return;
+    const y=H*.6,fs=64;ctx.save();ctx.font=sans(fs,800);ctx.textBaseline='middle';
+    const sp=Math.max(22,ctx.measureText(' ').width*1.5),larg=blo.map(p=>ctx.measureText(p.w.toUpperCase()).width);const linhas=[[]];let lw=0;
+    blo.forEach((p,k)=>{if(lw+larg[k]>W-2*M-40&&linhas[linhas.length-1].length){linhas.push([]);lw=0}linhas[linhas.length-1].push(k);lw+=larg[k]+sp});
+    const ap=Math.min(1,(lt-blo[0].a+.08)/.12);ctx.globalAlpha=ap;
+    linhas.forEach((ln,li)=>{const tw=ln.reduce((s,k)=>s+larg[k],0)+sp*(ln.length-1);let x=(W-tw)/2;const yy=y+(li-(linhas.length-1)/2)*fs*1.15;
+      ln.forEach(k=>{const p=blo[k],w=p.w.toUpperCase(),on=lt>=p.a-.03&&lt<p.b+.05,pas=lt>=p.b;const s=on?1.08:1;
+        ctx.save();ctx.translate(x+larg[k]/2,yy);ctx.scale(s,s);ctx.lineJoin='round';ctx.lineWidth=12;ctx.strokeStyle='rgba(0,0,0,.78)';ctx.strokeText(w,-larg[k]/2,0);
+        ctx.shadowColor='rgba(0,0,0,.5)';ctx.shadowBlur=18;ctx.fillStyle=on?cor:(pas?'#FFFFFF':'rgba(255,255,255,.92)');ctx.fillText(w,-larg[k]/2,0);ctx.restore();x+=larg[k]+sp})});
+    ctx.restore();return}}
+function comLegenda(d,ctx,estilo,cor){if(!NARR.ativo)return d;const ag=agenda(estilo,d.TOTAL);if(!ag.length)return d;const orig=d.draw;
+  return Object.assign({},d,{draw(t){orig(t);if(NARR.legenda)desenhaLegenda(ctx,t,ag,cor||'#FFD23F')},_agenda:ag})}
+
+/* ---------- mixagem: voz + música abaixando ---------- */
+function tocaNarracao(ac,dest,t0,estilo,duck){const ag=agenda(estilo);if(!ag.length)return;
+  const g=ac.createGain();g.gain.value=1;const c=ac.createDynamicsCompressor();c.threshold.value=-6;c.ratio.value=12;c.attack.value=.002;c.release.value=.1;g.connect(c);c.connect(dest);
+  ag.forEach(s=>{const b=ac.createBuffer(1,s.clip.data.length,NARR.sr);b.getChannelData(0).set(s.clip.data);const src=ac.createBufferSource();src.buffer=b;src.connect(g);src.start(t0+s.ini);
+    if(duck){duck.gain.setTargetAtTime(.28,t0+s.ini-.25,.07);duck.gain.setTargetAtTime(1,t0+s.fim+.15,.3)}})}
+
+/* ---------- gravação ---------- */
+let micStream=null;
+async function pegaMic(){if(micStream&&micStream.active)return micStream;
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)throw new Error('sem-mic');
+  micStream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:false,channelCount:1}});return micStream}
+function gravaFrase(i){return new Promise(async(ok,no)=>{let st;try{st=await pegaMic()}catch(e){return no(e)}
+  const ac=ctxAudio();try{await ac.resume()}catch(e){}
+  const tel=$('#teleprompter');tel.hidden=false;document.body.style.overflow='hidden';
+  $('#telParte').textContent=PARTES[i];$('#telTexto').textContent=NARR.textos[i];const cont=$('#telCont'),est=$('#telEstado'),nivel=$('#telNivel i');
+  const an=ac.createAnalyser();an.fftSize=1024;const fonte=ac.createMediaStreamSource(st);fonte.connect(an);const buf=new Float32Array(an.fftSize);
+  const tipos=['audio/webm;codecs=opus','audio/mp4','audio/webm',''];const mime=tipos.find(t=>!t||MediaRecorder.isTypeSupported(t));
+  const rec=new MediaRecorder(st,mime?{mimeType:mime}:undefined),ch=[];rec.ondataavailable=e=>{if(e.data.size)ch.push(e.data)};
+  let parado=false,falou=false,silDesde=0,raf=0,cancel=false;
+  const fim=()=>{if(parado)return;parado=true;cancelAnimationFrame(raf);try{rec.stop()}catch(e){}};
+  rec.onstop=async()=>{fonte.disconnect();tel.hidden=true;document.body.style.overflow='';if(cancel)return ok(null);
+    try{const bl=new Blob(ch,{type:rec.mimeType||mime||'audio/webm'});const ab=await bl.arrayBuffer();const b=await ac.decodeAudioData(ab);ok(b)}catch(e){no(e)}};
+  $('#telPronto').onclick=fim;$('#telCancelar').onclick=()=>{cancel=true;fim()};
+  rec.start(100);est.textContent='Prepare-se';cont.hidden=false;
+  for(const n of [3,2,1]){if(parado)return;cont.textContent=n;await new Promise(r=>setTimeout(r,650))}
+  cont.hidden=true;est.textContent='Pode falar';const tIni=performance.now();
+  (function mede(){an.getFloatTimeDomainData(buf);let s=0;for(const v of buf)s+=v*v;const db=10*Math.log10(s/buf.length+1e-12);
+    nivel.style.width=Math.max(2,Math.min(100,(db+60)*1.8))+'%';const agora=performance.now();
+    if(db>-42){falou=true;silDesde=0}else if(falou){if(!silDesde)silDesde=agora;if(agora-silDesde>1300){est.textContent='Pronto';return fim()}}
+    if(agora-tIni>20000)return fim();raf=requestAnimationFrame(mede)})()})}
+
+/* áudio inteiro enviado: divide nas pausas maiores, uma parte por frase */
+async function divideAudio(buf){const ac=ctxAudio(),sr=NARR.sr;const x=await reamostra(paraMono(buf),buf.sampleRate,sr);const seg=trechosDeFala(x,sr);
+  const n=NARR.textos.filter(t=>t.trim()).length||4;if(seg.length<2)return [x];
+  const gaps=seg.slice(1).map((s,i)=>({i,g:s[0]-seg[i][1]})).sort((a,b)=>b.g-a.g).slice(0,n-1).map(o=>o.i).sort((a,b)=>a-b);
+  const partes=[];let ini=0;gaps.forEach(gi=>{const corte=Math.round((seg[gi][1]+seg[gi+1][0])/2);partes.push(x.subarray(ini,corte));ini=corte});partes.push(x.subarray(ini));
+  return partes.map(p=>{const b=ac.createBuffer(1,p.length,sr);b.getChannelData(0).set(p);return b})}
+
+/* ---------- interface ---------- */
+function fmtS(s){return s.toFixed(1).replace('.',',')+'s'}
+function limiteDe(i){const c=(CENAS[CUR.estilo]||CENAS.luxo)[i];return Math.max(1.5,c[1]-c[0]-.5)}
+function atualizaRoteiro(forcar){const f=ficha(),r=roteiro(CUR.estilo,f);r.forEach((t,i)=>{if(forcar||(!NARR.editado[i]&&!NARR.clips[i])){NARR.textos[i]=t;const ta=$('#nt'+i);if(ta)ta.value=t}});desenhaNarr()}
+function desenhaNarr(){const box=$('#narrLista');if(!box)return;
+  NARR.textos.forEach((t,i)=>{const it=$('#ni'+i);const c=NARR.clips[i],lim=limiteDe(i);
+    const st=it.querySelector('.n-st');it.classList.toggle('feita',!!c);
+    if(!t.trim()){st.textContent='Sem fala nesta parte';st.className='n-st'}
+    else if(!c){st.textContent=`Ideal: até ${fmtS(lim)}`;st.className='n-st'}
+    else if(c.dur>lim+.6){st.textContent=`Gravada · ${fmtS(c.dur)} · um pouco longa, tente falar mais rápido ou encurtar`;st.className='n-st aviso'}
+    else{st.textContent=`Gravada · ${fmtS(c.dur)}`;st.className='n-st ok'}
+    it.querySelector('[data-ouvir]').hidden=!c;it.querySelector('[data-apagar]').hidden=!c;it.querySelector('[data-gravar]').textContent=c?'Regravar':'Gravar'});
+  const tem=NARR.clips.some(Boolean);$('#narrAtivo').checked=NARR.ativo;$('#narrOuvirTudo').hidden=!tem}
+async function guardaClip(i,buf){$('#narrMsg').textContent='Limpando a voz…';const r=await trataVoz(buf);r.texto=NARR.textos[i];r.pal=tempoPalavras(r.texto,r.falas,r.dur);NARR.clips[i]=r;NARR.ativo=true;desenhaNarr();refazerLive();$('#narrMsg').textContent=''}
+let tocando=null;
+function ouve(data){const ac=ctxAudio();ac.resume();if(tocando){try{tocando.stop()}catch(e){}}const b=ac.createBuffer(1,data.length,NARR.sr);b.getChannelData(0).set(data);const s=ac.createBufferSource();s.buffer=b;s.connect(ac.destination);s.start();tocando=s}
+function montaNarrUI(){const box=$('#narrLista');
+  PARTES.forEach((p,i)=>box.insertAdjacentHTML('beforeend',`<div class="n-item" id="ni${i}"><div class="n-cab"><b>${i+1}. ${p}</b><span class="n-st"></span></div>
+    <textarea id="nt${i}" rows="2" aria-label="Texto da parte ${p}"></textarea>
+    <div class="linha-acoes"><button class="btn-cl escuro" type="button" data-gravar="${i}">Gravar</button><button class="btn-cl" type="button" data-ouvir="${i}" hidden>Ouvir</button><button class="link" type="button" data-apagar="${i}" hidden>Apagar</button></div></div>`));
+  box.addEventListener('input',e=>{const m=e.target.id.match(/^nt(\d)$/);if(!m)return;const i=+m[1];NARR.textos[i]=e.target.value;NARR.editado[i]=true;const c=NARR.clips[i];if(c){c.texto=e.target.value;c.pal=tempoPalavras(c.texto,c.falas,c.dur);c.blocos=null;refazerLive()}});
+  box.addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;const msg=$('#narrMsg');
+    if(b.dataset.gravar!=null){const i=+b.dataset.gravar;if(!NARR.textos[i].trim()){msg.textContent='Escreva o texto desta parte antes de gravar.';return}
+      try{const buf=await gravaFrase(i);if(buf)await guardaClip(i,buf)}catch(err){console.warn(err);msg.textContent='O microfone não foi liberado aqui. Grave no gravador do celular ou no WhatsApp e use "Enviar um áudio pronto".';$('#teleprompter').hidden=true;document.body.style.overflow=''}}
+    if(b.dataset.ouvir!=null){const c=NARR.clips[+b.dataset.ouvir];if(c)ouve(c.data)}
+    if(b.dataset.apagar!=null){NARR.clips[+b.dataset.apagar]=null;if(!NARR.clips.some(Boolean))NARR.ativo=false;desenhaNarr();refazerLive()}});
+  $('#narrAtivo').onchange=e=>{NARR.ativo=e.target.checked&&NARR.clips.some(Boolean);if(e.target.checked&&!NARR.clips.some(Boolean))$('#narrMsg').textContent='Grave pelo menos uma parte para a voz entrar no vídeo.';desenhaNarr();refazerLive()};
+  $('#narrLegenda').onchange=e=>{NARR.legenda=e.target.checked;refazerLive()};
+  $('#narrRefaz').onclick=()=>{NARR.editado=[false,false,false,false];atualizaRoteiro(true)};
+  $('#narrArq').onchange=async e=>{const fl=e.target.files[0];e.target.value='';if(!fl)return;const msg=$('#narrMsg');msg.textContent='Lendo o áudio…';
+    try{const ac=ctxAudio();const b=await ac.decodeAudioData(await fl.arrayBuffer());const partes=await divideAudio(b);
+      const idx=NARR.textos.map((t,i)=>t.trim()?i:-1).filter(i=>i>=0);NARR.clips=[null,null,null,null];
+      for(let k=0;k<partes.length&&k<idx.length;k++){msg.textContent=`Limpando a voz… ${k+1} de ${Math.min(partes.length,idx.length)}`;await guardaClip(idx[k],partes[k])}
+      msg.textContent=partes.length<idx.length?'Pronto. Encontrei menos pausas que frases: confira cada parte e regrave a que faltar.':'Pronto. Confira cada parte em "Ouvir".'}catch(err){console.warn(err);msg.textContent='Não consegui ler esse áudio. Envie em MP3, M4A, OGG ou WAV.'}};
+  $('#narrOuvirTudo').onclick=()=>{const ag=agenda(CUR.estilo);if(!ag.length)return;const fim=Math.ceil(ag[ag.length-1].fim*NARR.sr)+NARR.sr;const mix=new Float32Array(fim);ag.forEach(s=>mix.set(s.clip.data,Math.round(s.ini*NARR.sr)));ouve(mix)};
+  atualizaRoteiro(true)}
+
 
 /* ---------- imagens ---------- */
 function loadImg(src,max=1600){return new Promise((ok,no)=>{const im=new Image();im.onload=()=>{const s=Math.min(1,max/Math.max(im.width,im.height));if(s>=1)return ok(im);
@@ -1052,8 +1307,17 @@ Object.entries(ESTILOS).forEach(([k,e])=>{
   const b=document.createElement('button');b.type='button';b.textContent=e.nome;b.dataset.k=k;b.onclick=()=>escolher(k);chips.appendChild(b);
 });
 CORES.forEach(c=>{const b=document.createElement('button');b.type='button';b.style.background=c;b.dataset.c=c;b.setAttribute('aria-label','Cor '+c);b.onclick=()=>{CUR.cor=c;marcarCor();refazerLive()};$('#cores').appendChild(b)});
-function marcarCor(){[...$('#cores').children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===CUR.cor))}
-function escolher(k){CUR.estilo=k;$('#saida').hidden=true;$('#cvLive').hidden=false;$('#salvar').hidden=true;$('#compartilhar').hidden=true;CUR.cor=ESTILOS[k].cor;marcarCor();
+function marcarCor(){[...$('#cores').children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.c.toLowerCase()===String(CUR.cor).toLowerCase()));const cl=$('#corLivre');if(cl&&/^#[0-9a-f]{6}$/i.test(CUR.cor))cl.value=CUR.cor;if($('#corFixa').checked)try{localStorage.setItem('aev-cor',CUR.cor)}catch(e){}}
+function corFixa(){try{return localStorage.getItem('aev-cor-fixa')==='1'&&localStorage.getItem('aev-cor')||null}catch(e){return null}}
+function poeCor(c){CUR.cor=c;marcarCor();refazerLive()}
+$('#corLivre').addEventListener('input',e=>poeCor(e.target.value));
+$('#corFixa').checked=!!corFixa();
+$('#corFixa').onchange=e=>{try{localStorage.setItem('aev-cor-fixa',e.target.checked?'1':'0');if(e.target.checked)localStorage.setItem('aev-cor',CUR.cor)}catch(err){}};
+function corDoLogo(im){try{const c=document.createElement('canvas');c.width=c.height=64;const g=c.getContext('2d');g.drawImage(im,0,0,64,64);const d=g.getImageData(0,0,64,64).data;const cx={};
+  for(let i=0;i<d.length;i+=4){if(d[i+3]<128)continue;const r=d[i],gg=d[i+1],b=d[i+2],mx=Math.max(r,gg,b),mn=Math.min(r,gg,b),sat=mx?(mx-mn)/mx:0;if(sat<.28||mx<60)continue;const k=(r>>4)+','+(gg>>4)+','+(b>>4);(cx[k]=cx[k]||{n:0,r:0,g:0,b:0,s:0});const o=cx[k];o.n++;o.r+=r;o.g+=gg;o.b+=b;o.s+=sat}
+  const m=Object.values(cx).sort((a,b)=>b.n*(b.s/b.n)-a.n*(a.s/a.n))[0];if(!m)return null;const h=v=>Math.round(v/m.n).toString(16).padStart(2,'0');return '#'+h(m.r)+h(m.g)+h(m.b)}catch(e){return null}}
+$('#corDoLogo').onclick=()=>{const c=CUR.logo&&corDoLogo(CUR.logo);if(c)poeCor(c);else $('#formatosMsg').textContent='Não achei uma cor forte no logo. Escolha em "Outra cor".'};
+function escolher(k){CUR.estilo=k;$('#saida').hidden=true;$('#cvLive').hidden=false;$('#salvar').hidden=true;$('#compartilhar').hidden=true;CUR.cor=corFixa()||ESTILOS[k].cor;marcarCor();if(window.atualizaRoteiro)setTimeout(()=>atualizaRoteiro(false),0);
   [...chips.children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k));
   [...trilho.children].forEach(c=>c.setAttribute('aria-pressed',c.dataset.k===k));
   document.querySelectorAll('[data-only]').forEach(el=>el.classList.toggle('on',el.dataset.only.split(' ').includes(k)));
@@ -1079,11 +1343,11 @@ $('#arquivos').onchange=async e=>{const fs=[...e.target.files].slice(0,10-fotos.
   for(const file of fs){const src=URL.createObjectURL(file);try{const img=await loadImg(src);const nome=NOMES[fotos.length]||'Ambiente';img._nome=nome;fotos.push({src,nome,img})}catch(err){}}
   renderFotos();refazerLive()};
 $('#exemplo').onclick=async()=>{const ims=await exemplos();fotos=EX_FOTOS.map(([k,n],i)=>({src:EXEMPLO[k],nome:n,img:ims[i]}));renderFotos();refazerLive()};
-CAMPOS.concat(['sv0','sl0','sv1','sl1','sv2','sl2','sv3','sl3']).forEach(id=>{const el=$('#'+id);el.addEventListener('input',()=>{refazerLive();guardar()})});
+CAMPOS.concat(['sv0','sl0','sv1','sl1','sv2','sl2','sv3','sl3']).forEach(id=>{const el=$('#'+id);el.addEventListener('input',()=>{refazerLive();guardar();clearTimeout(window.__rt);window.__rt=setTimeout(()=>atualizaRoteiro(false),400)})});
 
 /* ---------- prévias animadas ---------- */
 const PREV=[]; // {cv,ctx,drawer,start,visivel,key}
-function montaDrawer(ctx,estilo,imgs,f){const d=ESTILOS[estilo].build(ctx,imgs,f,blurBg(imgs[0],estilo==='baixou'?.62:.58));return d}
+function montaDrawer(ctx,estilo,imgs,f){const d=ESTILOS[estilo].build(ctx,imgs,f,blurBg(imgs[0],estilo==='baixou'?.62:.58));return estilo===CUR.estilo&&ctx!==undefined&&!ctx.__mini?comLegenda(d,ctx,estilo,f.cor):d}
 function addPrev(cv,k){const ctx=cv.getContext('2d');ctx.setTransform(cv.width/W,0,0,cv.height/H,0,0);const p={cv,ctx,k,drawer:null,start:performance.now(),visivel:false};PREV.push(p);
   new IntersectionObserver(es=>es.forEach(e=>p.visivel=e.isIntersecting),{threshold:.05}).observe(cv);return p}
 let pausado=false,ultimoQuadro=0;
@@ -1094,8 +1358,8 @@ function loop(now){requestAnimationFrame(loop);if(pausado||document.hidden||now-
 let liveP,heroP;
 async function iniciar(){
   const ims=await exemplos();
-  [...trilho.querySelectorAll('canvas')].forEach((cv,i)=>{const k=Object.keys(ESTILOS)[i];const p=addPrev(cv,k);p.drawer=montaDrawer(p.ctx,k,ims,fichaExemplo(k));p.start=performance.now()-3200-i*700});
-  liveP=addPrev($('#cvLive'),'live');escolher('luxo');requestAnimationFrame(loop);
+  [...trilho.querySelectorAll('canvas')].forEach((cv,i)=>{const k=Object.keys(ESTILOS)[i];const p=addPrev(cv,k);p.ctx.__mini=true;p.drawer=montaDrawer(p.ctx,k,ims,fichaExemplo(k));p.start=performance.now()-3200-i*700});
+  montaNarrUI();liveP=addPrev($('#cvLive'),'live');escolher('luxo');requestAnimationFrame(loop);
 }
 let tm=null;
 function refazerLive(){clearTimeout(tm);tm=setTimeout(async()=>{if(!liveP)return;const imgs=fotos.length?fotos.map(f=>f.img).filter(Boolean):await exemplos();if(!imgs.length)return;
@@ -1119,7 +1383,7 @@ $('#gerar').onclick=async()=>{
     const d=montaDrawer(ctx,CUR.estilo,imgs,f);
     d.draw(0);
     const stream=cv.captureStream(FPS);
-    if(ac){const dest=ac.createMediaStreamDestination();MUSICA[CUR.estilo](ac,dest,d.TOTAL,d.cues);dest.stream.getAudioTracks().forEach(tr=>stream.addTrack(tr))}
+    if(ac){const dest=ac.createMediaStreamDestination();MUSICA[CUR.estilo](ac,dest,d.TOTAL,d.cues);if(NARR.ativo&&window.__mix)tocaNarracao(ac,dest,window.__mix.t0,CUR.estilo,window.__mix.duck);dest.stream.getAudioTracks().forEach(tr=>stream.addTrack(tr))}
     const tipos=['video/mp4;codecs=avc1.42E01E,mp4a.40.2','video/mp4;codecs=avc1','video/mp4','video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'];
     const mime=tipos.find(t=>MediaRecorder.isTypeSupported(t))||'';
     const rec=new MediaRecorder(stream,mime?{mimeType:mime,videoBitsPerSecond:8e6}:{videoBitsPerSecond:8e6});
@@ -1155,10 +1419,10 @@ $('#saida').addEventListener('play',()=>{});
 // ao mudar de estilo depois de gerar, volta para a prévia
 chips.addEventListener('click',()=>{$('#saida').hidden=true;$('#cvLive').hidden=false;$('#salvar').hidden=true;$('#compartilhar').hidden=true});
 /* logo */
-async function poeLogo(src,salvar){try{const im=await loadImg(src,1000);CUR.logo=im;$('#logoPrev').innerHTML='';const v=new Image();v.alt='Logo';v.src=src;$('#logoPrev').appendChild(v);$('#logoTira').hidden=false;
+async function poeLogo(src,salvar){try{const im=await loadImg(src,1000);CUR.logo=im;$('#logoPrev').innerHTML='';const v=new Image();v.alt='Logo';v.src=src;$('#logoPrev').appendChild(v);$('#logoTira').hidden=false;$('#corDoLogo').hidden=false;
   if(salvar){try{localStorage.setItem('aev-logo',src)}catch(e){}}refazerLive()}catch(e){$('#msg').textContent='Não deu para abrir esse arquivo de logo. Tente um PNG ou JPG.'}}
 $('#logoArq').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const r=new FileReader();r.onload=()=>poeLogo(r.result,true);r.readAsDataURL(f)};
-$('#logoTira').onclick=()=>{CUR.logo=null;$('#logoPrev').innerHTML='<span>Sem logo</span>';$('#logoTira').hidden=true;try{localStorage.removeItem('aev-logo')}catch(e){}refazerLive()};
+$('#logoTira').onclick=()=>{CUR.logo=null;$('#logoPrev').innerHTML='<span>Sem logo</span>';$('#logoTira').hidden=true;$('#corDoLogo').hidden=true;try{localStorage.removeItem('aev-logo')}catch(e){}refazerLive()};
 try{const l=localStorage.getItem('aev-logo');if(l)poeLogo(l,false)}catch(e){}
 /* =================== MAIS FORMATOS: capa, carrossel e legenda =================== */
 const ESTILO_SERIF={luxo:1,trailer:1,vendido:1};
