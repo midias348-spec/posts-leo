@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Uma selfie, 5 retratos de Natal",
+ "quando": "2026-11-29T11:55-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-luzes-7.jpg"
+  ],
+  "caption": "Uma selfie. Cinco retratos de Natal. ✨\nVocê sobe a sua foto, cola o prompt e escolhe o clima: neon, pisca-pisca no rosto, luz nas mãos...\nDá pra fazer de graça no Gemini (o grátis tem limite por dia).\n\nComenta PROMPT que eu te mando os prompts + o passo a passo no direct.\n(Me segue pro direct chegar.)"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "40 abas — e nenhum vídeo pronto",
+ "quando": "2026-12-03T14:20-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-02-40-abas.jpg",
+  "caption": "Conteúdo grátis tem de monte. O problema é juntar tudo na ordem certa.\nO Agência de Bolso já vem organizado: instala no Claude e começa.\nLink na bio."
+ }
+}

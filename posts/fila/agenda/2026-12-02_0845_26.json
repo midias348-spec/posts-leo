@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Fotos de Natal pra produto",
+ "quando": "2026-12-02T08:45-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-marcas-7.jpg"
+  ],
+  "caption": "Se você faz arte ou vídeo pra loja, guarda isso: dezembro é quando todo lojista quer foto de Natal do produto.\nCom uma foto simples do produto (até de celular) e o prompt certo, sai foto de campanha.\nÉ um serviço que dá pra oferecer essa semana.\n\nComenta PROMPT que eu te mando os 5 prompts + o passo a passo no direct.\n(Me segue pro direct chegar.)"
+ }
+}

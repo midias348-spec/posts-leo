@@ -1,0 +1,17 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Copia e cola: 3 mensagens pra prospectar",
+ "quando": "2026-12-02T12:25-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-mensagens-1-capa.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-mensagens-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-mensagens-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-mensagens-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-mensagens-5.jpg"
+  ],
+  "caption": "Salva esse carrossel: são as 3 mensagens que eu usaria pra conseguir cliente de vídeo, do primeiro contato até o 'tá caro'.\nTroca [nome] e [loja] e manda.\nE se quiser fazer o vídeo da mensagem 1 em minutos: Agência de Bolso, link na bio."
+ }
+}

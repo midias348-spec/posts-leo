@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Ingresso — entrada pra quem cansou de tutorial",
+ "quando": "2026-11-29T14:05-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-01-ingresso.jpg",
+  "caption": "Você não precisa de mais um tutorial. Precisa de um atalho que funcione.\nAgência de Bolso, R$ 37. Link na bio."
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Dezembro — 5 produtos digitais (PDF no direct)",
+ "quando": "2026-12-01T14:15-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-05-dezembro.jpg",
+  "caption": "Separei 5 produtos digitais simples pra vender até o Natal.\nComenta DEZEMBRO que eu te mando no direct."
+ }
+}

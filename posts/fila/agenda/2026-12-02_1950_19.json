@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Coisas que ninguém me contou",
+ "quando": "2026-12-02T19:50-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-12-notas-ninguem-me-contou.jpg",
+  "caption": "Escrevi isso pra mim mesmo, mas achei que alguém precisava ler também.\nQual dessas mais te pegou? Me conta aqui embaixo."
+ }
+}

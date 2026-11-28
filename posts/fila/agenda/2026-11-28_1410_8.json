@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "3h da manhã — décimo tutorial, zero vídeo",
+ "quando": "2026-11-28T14:10-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-03-tres-da-manha.jpg",
+  "caption": "Quem nunca abriu o décimo tutorial achando que agora vai?\nVocê não é lento. Só pegou as peças fora de ordem.\nManda pra quem tá nessa 👇"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "5 coisas que eu faria se começasse hoje",
+ "quando": "2026-11-30T19:45-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-11-5-coisas-hoje.jpg",
+  "caption": "Se eu começasse a vender vídeo hoje, do zero, seria exatamente nessa ordem.\nSem curso caro, sem equipamento. Só nicho, amostra e mensagem certa.\nSalva e me diz nos comentários qual delas você ainda não faz."
+ }
+}

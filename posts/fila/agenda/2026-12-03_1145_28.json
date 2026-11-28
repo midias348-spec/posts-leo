@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Mural: vocês não precisam de fotógrafo pra ter essas fotos",
+ "quando": "2026-12-03T11:45-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-filme-7.jpg"
+  ],
+  "caption": "Montei um mural com 5 cenas de casal pro Natal 🎄\nNenhuma precisou de fotógrafo. Só uma foto de cada um e o prompt certo.\nSe for fazer só uma, começa pela do pijama: é a mais fácil de sair parecida com vocês.\n\nComenta PROMPT que eu te mando as 5 cenas + o passo a passo no direct.\n(Me segue antes, senão o direct não chega.)"
+ }
+}

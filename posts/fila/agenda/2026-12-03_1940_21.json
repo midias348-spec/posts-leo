@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Qual dessas você responderia? A ou B",
+ "quando": "2026-12-03T19:40-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-15-qual-voce-responderia.jpg",
+  "caption": "A ou B? Comenta aí antes de ler o resto 👇\n\n.\n.\n.\nA B ganha porque entrega antes de pedir. A pessoa vê o vídeo com a cara do negócio dela. A A pede atenção sem dar nada em troca.\nQuer fazer o vídeo da B em minutos? Agência de Bolso, link na bio."
+ }
+}

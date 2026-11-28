@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Fotos de Natal que fogem do óbvio",
+ "quando": "2026-11-30T08:50-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-virais-7.jpg"
+  ],
+  "caption": "Todo mundo vai postar a mesma foto na frente da árvore. Você não. 🎄\nReflexo na bola de Natal, ficha policial com o Papai Noel, selfie na neve com os duendes...\nTudo a partir de uma selfie sua.\n\nComenta PROMPT que eu te mando os prompts prontos no direct.\n(Me segue pro direct chegar.)"
+ }
+}

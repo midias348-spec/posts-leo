@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Ensaio de Natal com IA virou renda extra",
+ "quando": "2026-12-01T11:50-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-venda-7.jpg"
+  ],
+  "caption": "Dezembro é o mês em que todo mundo quer foto de Natal da família. E muita gente não quer pagar fotógrafo nem montar cenário.\nCom IA, dá pra fazer o ensaio a partir das fotos que a pessoa já tem, e entregar pelo WhatsApp.\nSó combina tudo antes: preço, prazo, autorização das fotos e que é feito com IA.\n\nComenta PROMPT que eu te mando os 20 estilos de ensaio prontos + o passo a passo.\n(Me segue pro direct chegar.)"
+ }
+}

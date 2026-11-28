@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "A frase do 'tá caro'",
+ "quando": "2026-12-01T19:30-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-13-ta-caro.jpg",
+  "caption": "A frase:\n\"Entendo! Me fala quanto você pensava investir que eu te mostro o que dá pra fazer nesse valor.\"\n\nPor que funciona: a conversa não morre no preço. Você descobre o orçamento real e adapta a entrega, sem baixar seu valor de cara. Muitas vezes o cliente tinha mais do que você imaginava.\nSalva pra usar na próxima."
+ }
+}

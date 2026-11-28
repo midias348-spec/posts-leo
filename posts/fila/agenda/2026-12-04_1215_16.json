@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Toma, é de graça — PDF dezembro",
+ "quando": "2026-12-04T12:15-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-09-toma-gratis.jpg",
+  "caption": "Montei um guia rápido com 5 produtos digitais simples pra vender até o Natal.\nSem enrolação, só o que dá pra fazer agora.\nComenta DEZEMBRO que eu te mando no direct."
+ }
+}

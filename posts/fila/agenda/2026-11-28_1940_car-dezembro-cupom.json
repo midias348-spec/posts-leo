@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Cupom do Natal: 5 produtos digitais",
+ "quando": "2026-11-28T19:40-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-dezembro-cupom-7.jpg"
+  ],
+  "caption": "Ainda dá tempo. Sério.\n\nDezembro é o mês que mais gente procura coisa pronta: ceia barata, planner pro ano novo, arte de Natal pra loja, foto de família, vídeo de boas festas.\n\nSeparei 5 produtos digitais que dá pra fazer com IA, sem estoque e sem gastar nada pra começar. Não é promessa de ficar rico. É uma ideia concreta pra você tirar um extra esse mês.\n\nNo PDF tem, pra cada um: pra quem vender, o passo a passo, o prompt pronto e como divulgar. E uma página de quanto cobrar sem chutar.\n\nComenta DEZEMBRO que eu te mando no direct (me segue pra mensagem chegar).\n\n#rendaextra #produtosdigitais #inteligenciaartificial #natal2026 #ia"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Não sei programar — nem eu precisei",
+ "quando": "2026-11-30T12:20-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-06-nao-sei-programar.jpg",
+  "caption": "\"Mas eu não sei programar.\"\nNem eu. Você escreve do jeito que fala no WhatsApp e o Claude faz o código.\nAgência de Bolso, R$ 37. Link na bio."
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "A mensagem que você quer receber em dezembro",
+ "quando": "2026-12-05T19:45-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-10-mensagem-dezembro.jpg",
+  "caption": "Toda loja quer postar algo de Natal. Pouca gente sabe fazer o vídeo.\nCom o Agência de Bolso você instala no Claude, escolhe o modelo e entrega.\nR$ 37, link na bio."
+ }
+}

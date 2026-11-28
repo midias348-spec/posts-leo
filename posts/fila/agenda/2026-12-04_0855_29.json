@@ -1,0 +1,19 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_carousel_post",
+ "titulo": "Ela reclama que a gente nunca tira foto junto",
+ "quando": "2026-12-04T08:55-03:00",
+ "params": {
+  "image_urls": [
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-1.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-2.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-3.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-4.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-5.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-6.jpg",
+   "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/carrosseis/leo-carrossel-natal-casal-feito-a-mao-7.jpg"
+  ],
+  "caption": "Ela reclama que a gente nunca tira foto junto. Então eu transformei a gente em massinha, em papel recortado e em bordado. 😅\nQual ficaria na parede da sua casa: 1, 2 ou 3?\n\nQuer fazer o de vocês? Comenta PROMPT que eu te mando os 8 estilos de casal + o tutorial no direct.\n(Me segue pro direct chegar.)"
+ }
+}

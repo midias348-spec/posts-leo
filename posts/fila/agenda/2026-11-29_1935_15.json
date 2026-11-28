@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Quem vende vídeo com IA",
+ "quando": "2026-11-29T19:35-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-08-quem-vende-video.jpg",
+  "caption": "Diz aí se não é exatamente assim 😅\nMarca aquele amigo que tá nessa vida também."
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "connector": "instagram",
+ "account": "17841436621167761",
+ "action": "create_image_post",
+ "titulo": "Meu primeiro cliente foi uma padaria",
+ "quando": "2026-12-04T19:35-03:00",
+ "params": {
+  "image_url": "https://raw.githubusercontent.com/midias348-spec/posts-leo/main/posts/flyers/leo-flyer-07-padaria.jpg",
+  "caption": "Meu primeiro vídeo vendido foi pra uma padaria. Cobrei R$ 50.\nHoje eu olho pra trás e agradeço por não ter esperado estar pronto.\nSe você tá esperando o momento certo, esse é o sinal."
+ }
+}
