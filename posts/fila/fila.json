@@ -194,6 +194,72 @@
    "capa": null,
    "data": null,
    "status": "aprovado"
+  },
+  {
+   "id": 18,
+   "tipo": "flyer",
+   "lote": 3,
+   "arquivo": "flyers/leo-flyer-11-5-coisas-hoje.jpg",
+   "titulo": "5 coisas que eu faria se começasse hoje",
+   "cta": null,
+   "legenda": "Se eu começasse a vender vídeo hoje, do zero, seria exatamente nessa ordem.\nSem curso caro, sem equipamento. Só nicho, amostra e mensagem certa.\nSalva e me diz nos comentários qual delas você ainda não faz.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 19,
+   "tipo": "flyer",
+   "lote": 3,
+   "arquivo": "flyers/leo-flyer-12-notas-ninguem-me-contou.jpg",
+   "titulo": "Coisas que ninguém me contou",
+   "cta": null,
+   "legenda": "Escrevi isso pra mim mesmo, mas achei que alguém precisava ler também.\nQual dessas mais te pegou? Me conta aqui embaixo.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 20,
+   "tipo": "flyer",
+   "lote": 3,
+   "arquivo": "flyers/leo-flyer-13-ta-caro.jpg",
+   "titulo": "A frase do 'tá caro'",
+   "cta": null,
+   "legenda": "A frase:\n\"Entendo! Me fala quanto você pensava investir que eu te mostro o que dá pra fazer nesse valor.\"\n\nPor que funciona: a conversa não morre no preço. Você descobre o orçamento real e adapta a entrega, sem baixar seu valor de cara. Muitas vezes o cliente tinha mais do que você imaginava.\nSalva pra usar na próxima.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 21,
+   "tipo": "flyer",
+   "lote": 3,
+   "arquivo": "flyers/leo-flyer-15-qual-voce-responderia.jpg",
+   "titulo": "Qual dessas você responderia? A ou B",
+   "cta": "A/B",
+   "legenda": "A ou B? Comenta aí antes de ler o resto 👇\n\n.\n.\n.\nA B ganha porque entrega antes de pedir. A pessoa vê o vídeo com a cara do negócio dela. A A pede atenção sem dar nada em troca.\nQuer fazer o vídeo da B em minutos? Agência de Bolso, link na bio.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 22,
+   "tipo": "carrossel",
+   "lote": 3,
+   "arquivo": [
+    "carrosseis/leo-carrossel-mensagens-1-capa.jpg",
+    "carrosseis/leo-carrossel-mensagens-2.jpg",
+    "carrosseis/leo-carrossel-mensagens-3.jpg",
+    "carrosseis/leo-carrossel-mensagens-4.jpg",
+    "carrosseis/leo-carrossel-mensagens-5.jpg"
+   ],
+   "titulo": "Copia e cola: 3 mensagens pra prospectar",
+   "cta": "BIO",
+   "legenda": "Salva esse carrossel: são as 3 mensagens que eu usaria pra conseguir cliente de vídeo, do primeiro contato até o 'tá caro'.\nTroca [nome] e [loja] e manda.\nE se quiser fazer o vídeo da mensagem 1 em minutos: Agência de Bolso, link na bio.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
   }
  ]
 }
