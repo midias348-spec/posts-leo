@@ -260,6 +260,26 @@
    "capa": null,
    "data": null,
    "status": "aprovado"
+  },
+  {
+   "id": 23,
+   "tipo": "carrossel",
+   "lote": "natal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-familia-1.jpg",
+    "carrosseis/leo-carrossel-natal-familia-2.jpg",
+    "carrosseis/leo-carrossel-natal-familia-3.jpg",
+    "carrosseis/leo-carrossel-natal-familia-4.jpg",
+    "carrosseis/leo-carrossel-natal-familia-5.jpg",
+    "carrosseis/leo-carrossel-natal-familia-6.jpg",
+    "carrosseis/leo-carrossel-natal-familia-7.jpg"
+   ],
+   "titulo": "Ensaio de Natal da família sem fotógrafo",
+   "cta": "PROMPT",
+   "legenda": "Ensaio de Natal da família sem fotógrafo e sem sair de casa 🎄\nVocê manda uma foto de cada um, cola o prompt e a IA monta o ensaio.\nDá pra fazer de graça no Gemini ou no ChatGPT. O grátis tem limite de imagens por dia, então vai com calma.\n\nComenta PROMPT que eu te mando os prompts prontos + o passo a passo no direct.\n(Precisa me seguir pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
   }
  ]
 }
