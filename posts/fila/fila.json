@@ -280,6 +280,66 @@
    "capa": null,
    "data": null,
    "status": "aguardando aprovação"
+  },
+  {
+   "id": 24,
+   "tipo": "carrossel",
+   "lote": "natal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-luzes-1.jpg",
+    "carrosseis/leo-carrossel-natal-luzes-2.jpg",
+    "carrosseis/leo-carrossel-natal-luzes-3.jpg",
+    "carrosseis/leo-carrossel-natal-luzes-4.jpg",
+    "carrosseis/leo-carrossel-natal-luzes-5.jpg",
+    "carrosseis/leo-carrossel-natal-luzes-6.jpg",
+    "carrosseis/leo-carrossel-natal-luzes-7.jpg"
+   ],
+   "titulo": "Uma selfie, 5 retratos de Natal",
+   "cta": "PROMPT",
+   "legenda": "Uma selfie. Cinco retratos de Natal. ✨\nVocê sobe a sua foto, cola o prompt e escolhe o clima: neon, pisca-pisca no rosto, luz nas mãos...\nDá pra fazer de graça no Gemini (o grátis tem limite por dia).\n\nComenta PROMPT que eu te mando os prompts + o passo a passo no direct.\n(Me segue pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 25,
+   "tipo": "carrossel",
+   "lote": "natal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-virais-1.jpg",
+    "carrosseis/leo-carrossel-natal-virais-2.jpg",
+    "carrosseis/leo-carrossel-natal-virais-3.jpg",
+    "carrosseis/leo-carrossel-natal-virais-4.jpg",
+    "carrosseis/leo-carrossel-natal-virais-5.jpg",
+    "carrosseis/leo-carrossel-natal-virais-6.jpg",
+    "carrosseis/leo-carrossel-natal-virais-7.jpg"
+   ],
+   "titulo": "Fotos de Natal que fogem do óbvio",
+   "cta": "PROMPT",
+   "legenda": "Todo mundo vai postar a mesma foto na frente da árvore. Você não. 🎄\nReflexo na bola de Natal, ficha policial com o Papai Noel, selfie na neve com os duendes...\nTudo a partir de uma selfie sua.\n\nComenta PROMPT que eu te mando os prompts prontos no direct.\n(Me segue pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 26,
+   "tipo": "carrossel",
+   "lote": "natal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-marcas-1.jpg",
+    "carrosseis/leo-carrossel-natal-marcas-2.jpg",
+    "carrosseis/leo-carrossel-natal-marcas-3.jpg",
+    "carrosseis/leo-carrossel-natal-marcas-4.jpg",
+    "carrosseis/leo-carrossel-natal-marcas-5.jpg",
+    "carrosseis/leo-carrossel-natal-marcas-6.jpg",
+    "carrosseis/leo-carrossel-natal-marcas-7.jpg"
+   ],
+   "titulo": "Fotos de Natal pra produto",
+   "cta": "PROMPT",
+   "legenda": "Se você faz arte ou vídeo pra loja, guarda isso: dezembro é quando todo lojista quer foto de Natal do produto.\nCom uma foto simples do produto (até de celular) e o prompt certo, sai foto de campanha.\nÉ um serviço que dá pra oferecer essa semana.\n\nComenta PROMPT que eu te mando os 5 prompts + o passo a passo no direct.\n(Me segue pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
   }
  ]
 }
