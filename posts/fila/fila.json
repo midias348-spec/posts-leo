@@ -134,6 +134,66 @@
    "capa": null,
    "data": null,
    "status": "aprovado"
+  },
+  {
+   "id": 13,
+   "tipo": "flyer",
+   "lote": 2,
+   "arquivo": "flyers/leo-flyer-06-nao-sei-programar.jpg",
+   "titulo": "Não sei programar — nem eu precisei",
+   "cta": "BIO",
+   "legenda": "\"Mas eu não sei programar.\"\nNem eu. Você escreve do jeito que fala no WhatsApp e o Claude faz o código.\nAgência de Bolso, R$ 37. Link na bio.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 14,
+   "tipo": "flyer",
+   "lote": 2,
+   "arquivo": "flyers/leo-flyer-07-padaria.jpg",
+   "titulo": "Meu primeiro cliente foi uma padaria",
+   "cta": null,
+   "legenda": "Meu primeiro vídeo vendido foi pra uma padaria. Cobrei R$ 50.\nHoje eu olho pra trás e agradeço por não ter esperado estar pronto.\nSe você tá esperando o momento certo, esse é o sinal.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 15,
+   "tipo": "flyer",
+   "lote": 2,
+   "arquivo": "flyers/leo-flyer-08-quem-vende-video.jpg",
+   "titulo": "Quem vende vídeo com IA",
+   "cta": null,
+   "legenda": "Diz aí se não é exatamente assim 😅\nMarca aquele amigo que tá nessa vida também.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 16,
+   "tipo": "flyer",
+   "lote": 2,
+   "arquivo": "flyers/leo-flyer-09-toma-gratis.jpg",
+   "titulo": "Toma, é de graça — PDF dezembro",
+   "cta": "DEZEMBRO",
+   "legenda": "Montei um guia rápido com 5 produtos digitais simples pra vender até o Natal.\nSem enrolação, só o que dá pra fazer agora.\nComenta DEZEMBRO que eu te mando no direct.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 17,
+   "tipo": "flyer",
+   "lote": 2,
+   "arquivo": "flyers/leo-flyer-10-mensagem-dezembro.jpg",
+   "titulo": "A mensagem que você quer receber em dezembro",
+   "cta": "BIO",
+   "legenda": "Toda loja quer postar algo de Natal. Pouca gente sabe fazer o vídeo.\nCom o Agência de Bolso você instala no Claude, escolhe o modelo e entrega.\nR$ 37, link na bio.",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
   }
  ]
 }
