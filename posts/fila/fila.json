@@ -340,6 +340,26 @@
    "capa": null,
    "data": null,
    "status": "aguardando aprovação"
+  },
+  {
+   "id": 27,
+   "tipo": "carrossel",
+   "lote": "natal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-venda-1.jpg",
+    "carrosseis/leo-carrossel-natal-venda-2.jpg",
+    "carrosseis/leo-carrossel-natal-venda-3.jpg",
+    "carrosseis/leo-carrossel-natal-venda-4.jpg",
+    "carrosseis/leo-carrossel-natal-venda-5.jpg",
+    "carrosseis/leo-carrossel-natal-venda-6.jpg",
+    "carrosseis/leo-carrossel-natal-venda-7.jpg"
+   ],
+   "titulo": "Ensaio de Natal com IA virou renda extra",
+   "cta": "PROMPT",
+   "legenda": "Dezembro é o mês em que todo mundo quer foto de Natal da família. E muita gente não quer pagar fotógrafo nem montar cenário.\nCom IA, dá pra fazer o ensaio a partir das fotos que a pessoa já tem, e entregar pelo WhatsApp.\nSó combina tudo antes: preço, prazo, autorização das fotos e que é feito com IA.\n\nComenta PROMPT que eu te mando os 20 estilos de ensaio prontos + o passo a passo.\n(Me segue pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
   }
  ]
 }
