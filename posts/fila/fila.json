@@ -360,6 +360,46 @@
    "capa": null,
    "data": null,
    "status": "aprovado"
+  },
+  {
+   "id": 28,
+   "tipo": "carrossel",
+   "lote": "natal-casal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-casal-filme-1.jpg",
+    "carrosseis/leo-carrossel-natal-casal-filme-2.jpg",
+    "carrosseis/leo-carrossel-natal-casal-filme-3.jpg",
+    "carrosseis/leo-carrossel-natal-casal-filme-4.jpg",
+    "carrosseis/leo-carrossel-natal-casal-filme-5.jpg",
+    "carrosseis/leo-carrossel-natal-casal-filme-6.jpg",
+    "carrosseis/leo-carrossel-natal-casal-filme-7.jpg"
+   ],
+   "titulo": "Ensaio de Natal a dois que parece cena de filme",
+   "cta": "PROMPT",
+   "legenda": "Ensaio de Natal a dois, sem fotógrafo e sem estúdio. 🎬\nPisca-pisca, beijo na frente da árvore, a cena vista pela janela...\nCada cena tem o prompt pronto: vocês mandam uma foto de cada um e a IA monta.\nDe graça você já consegue fazer.\n\nComenta PROMPT que eu te mando as 5 cenas + o passo a passo no direct.\n(Me segue pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
+  },
+  {
+   "id": 29,
+   "tipo": "carrossel",
+   "lote": "natal-casal",
+   "arquivo": [
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-1.jpg",
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-2.jpg",
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-3.jpg",
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-4.jpg",
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-5.jpg",
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-6.jpg",
+    "carrosseis/leo-carrossel-natal-casal-feito-a-mao-7.jpg"
+   ],
+   "titulo": "Ela reclama que a gente nunca tira foto junto",
+   "cta": "PROMPT",
+   "legenda": "Ela reclama que a gente nunca tira foto junto. Então eu transformei a gente em massinha, em papel recortado e em bordado. 😅\nQual ficaria na parede da sua casa: 1, 2 ou 3?\n\nQuer fazer o de vocês? Comenta PROMPT que eu te mando os 8 estilos de casal + o tutorial no direct.\n(Me segue pro direct chegar.)",
+   "capa": null,
+   "data": null,
+   "status": "aguardando aprovação"
   }
  ]
 }
